@@ -1,0 +1,124 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+			
+				h2 Diplomado / <span>Mieloma-Linfoma: “Retos en diagnóstico y terapias novedosas”</span>
+				
+				h3 Cronograma
+				
+				//- Table
+				table.table.table-striped
+					caption Curso virtual: Manejo del asma en atención primaria
+					thead
+						tr
+							th Módulos
+							th Actividades
+							th Inicio
+							th Cierre
+					tbody
+						tr
+							td Módulo 0
+							td(colspan='3') 09 de abril - 22 de Abril
+						tr
+							td(rowspan='2') Módulo 1
+							td(colspan='3') 22 de Abril - 06 de Mayo
+						tr
+							td Evaluación
+							td(colspan='2') 02 - 06 de Mayo
+						tr
+							td(rowspan='3') Módulo 2
+							td(colspan='3') 06 de Mayo  - 20 de Mayo
+						tr
+							td Video Conferencia
+							td(colspan='2') 16 de Mayo
+						tr
+							td Evaluación
+							td(colspan='2') 17 - 20 de Mayo
+						tr
+							td(rowspan='4') Módulo 3
+							td(colspan='3') 20 de mayo - 10 de Junio
+						tr
+							td Caso clínico
+							td(colspan='2') 30 de mayo - 06 de junio
+						tr
+							td Video Conferencia
+							td(colspan='2') 06 de junio
+						tr
+							td Evaluación
+							td(colspan='2') 07 de junio - 10 de junio
+						tr
+							td(rowspan='2') Módulo 4
+							td(colspan='3') 10 de junio - 24 de Junio
+						tr
+							td Evaluación
+							td(colspan='2') 20 de junio - 24 de junio
+						tr
+							td(rowspan='3') Módulo 5
+							td(colspan='3') 24 de Junio - 08 de Julio
+						tr
+							td Video Conferencia
+							td(colspan='2') 04 de julio
+						tr
+							td Evaluación
+							td(colspan='2') 05 de julio - 08 de julio
+						tr
+							td(rowspan='4') Módulo 6
+							td(colspan='3') 08 de Julio - 29 de Julio
+						tr
+							td Caso Clínico
+							td(colspan='2') 18 de Julio - 25 de Julio
+						tr
+							td Video Conferencia
+							td(colspan='2') 25 de Julio
+						tr
+							td Evaluación
+							td(colspan='2') 26 de julio - 29 de Julio
+						tr
+							td(rowspan='4') Módulo 7
+							td(colspan='3') 29 de Julio - 19 de Agosto
+						tr
+							td Caso Clínico
+							td(colspan='2') 8 de agosto - 15 de agosto
+						tr
+							td Video Conferencia
+							td(colspan='2') 15 de Agosto
+						tr
+							td Evaluación
+							td(colspan='2') 16 de agosto - 20 de agosto
+						tr
+							td(colspan='2') Semana de Recuperación 
+							td(colspan='2') 20 de agosto - 27 de Agosto
+						tr
+							td(colspan='2') Certificación
+							td(colspan='2') 28 - 31 de agosto
+						tr
+							td(colspan='4') Clausura
+							
+							
+	//- footer section			
+	+footer-interno
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285720', 'available', 'Anterior', '#', 'disabled', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

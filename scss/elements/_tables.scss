@@ -1,0 +1,84 @@
+// -----------------------
+// tables
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.table{
+		
+		border-top: 1px solid $color_grey;
+		border-bottom: 1px solid $color_grey;
+		padding: 1rem 0;
+		box-sizing: border-box;
+		margin: 4rem auto;
+		width: auto;
+		
+		caption{
+			font: $font_titles $font_myr_semibold_condensed;
+		}
+		
+		thead{
+			th{
+				background: $color_grey;
+				color: $color_white;
+				border-left: 1px solid $color_white;
+				border-right: 1px solid $color_white;
+				font-family: $font_myr_semibold;
+				vertical-align: middle;
+				text-align: center;
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+			}
+		}
+		
+		tr{
+			
+			td{
+				border-top: 1px solid $color_grey;
+				border-bottom: 1px solid $color_grey;
+				border-left: 1px solid $color_grey;
+				border-right: 1px solid $color_grey;
+				font-family: $font_hel_light_cond;
+				line-height: initial;
+				text-align: center;
+				padding: 0.5rem 0.4rem;
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+			}
+			
+			&:nth-child(odd){
+				
+				td{
+					background: $color_grey_light;
+				}
+				
+			}
+			
+			&:last-child{
+				
+				td{
+					border-bottom: 0px;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,110 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+			
+				h3 6. Eventos secundarios
+				
+				p Tras la desregulación de una o más de las ciclinas se requieren cambios genéticos adicionales para aumentar el potencial de crecimiento de lo anormal en la progresión de la enfermedad de MGUS a MM. Estos son denominados eventos secundarios  dentro de los cuales están:
+				
+				ul
+					li Pérdida del cromosoma 13
+					li Adquisición de mutaciones que conducen a la activación de los oncogenes MYC y RAS
+					li Cambios numéricos del cromosoma 1 (ganancia del largo brazo y / o pérdida del brazo corto)
+					li Activación de cMyc 
+					li Mutaciones que inactivan la regulación. de la transcripción del factor nuclear kB (NF-kB) 
+				
+				p La frecuencia de las mutaciones puntuales de K-Ras y N-Ras aumentan de aproximadamente 7% en MGUS a 24–27% en MM. 
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura05.png' data-lightbox='example-5')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura05.png' alt='Figura 5')
+					div.span4
+						div.img-footer
+							span Figura 5. Adaptado de referencia 20
+							
+				p El oncogen  c-MYC  expresa en  menor nivel en MGUS en comparación con  MM, un  experimento en ratones  por  activación esporádica de este gen  en células del centro germinal B dio lugar a la MM.
+					small (21) 
+
+				p Se usa  FISH para determinar la presencia del c MYc aunque podría hallarse L MYC o N Myc. Por lo general  no está presente en MGUS pero si  en el    casi  15% de los  MM  no tratados, y en el 50 % de  los MM recaídos y refractarios. 
+
+				p Otro evento presente  es la Monosomía 13  (eliminación del cromosoma 13) que se  puede presentar tempranamente en MGUS.
+
+				p Las mutaciones de NRAS o KRAS están presentes en aproximadamente 18– 20% de MM  y en menor proporción en  MGUS (7 % NRAS  y 0%  KRAS) lo cual sugiere la intervención de KRAS en la  transición de MGUS a MM  podría ser una diana terapéutica.
+
+				p Algunas sustancias son secretadas por células estromales  (APRIL y BAFF) que estimulan los receptores que conducen a la activación de la vía NF-kappaB hasta en el 20% de los nuevos casos de MM.
+
+				p Se puede identificar hasta en el 10%  en los MM recién diagnosticados eliminación de 17p  (FISH para TP53). Se considera factor de  mal pronóstico, al igual que  la  Del1p y Add1q
+					small (22). 
+
+				p Con base a los aspectos genéticos  mencionados más importantes  se podría realizar la Estratificación del riesgo
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 2. Referencia 23
+					thead
+						tr
+							th Anormalidades genéticas
+							th Valor pronóstico
+					tbody
+						tr
+							td Del (17p)
+							td Alto riesgo
+						tr
+							td Del (1p32)
+							td Alto riesgo
+						tr
+							td t (4;14)
+							td Riesgo intermedio
+						tr
+							td Ganancia 1g
+							td Riesgo intermedio
+						tr
+							td t (11;14)
+							td Neutral
+							
+				//- Progreso modulo
+				+progreso-modulo('progreso60')
+ 
+							
+							
+							
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+		
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285749', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285751', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

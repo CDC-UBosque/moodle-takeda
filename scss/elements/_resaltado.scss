@@ -1,0 +1,77 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc{
+		
+		.resaltado-txt{
+			max-width: 710px;
+		    margin: auto;
+		    float: none;
+		    background: $color_brand_blue;
+		    box-sizing: border-box;
+		    padding: 1rem 2rem;
+		    
+		    p{
+			    font: 21px $font_hel_medium;
+			    line-height: 28px;
+			    color: $color_white;
+			    position: relative;
+			    
+			    &:first-child{
+					
+					&:before{
+						content: "";
+					    position: absolute;
+					    top: 6%;
+					    font-size: 20px;
+					    text-decoration: none;
+					    left: -9%;
+					    z-index: 1;
+					    background: $color_grey;
+					    width: 50px;
+					    height: 5px;
+					}
+					
+			    }
+			    
+		    }
+		    
+		    p.small{
+				font: 17px $font_hel_light_cond;
+			    line-height: 20px;
+			    text-align: right;
+		    }
+		    
+		}
+		
+		.accordion-inner{
+			.resaltado-txt{
+				max-width: 710px;
+			    margin: auto;
+			    float: none;
+			    background: $color_brand_blue;
+			    box-sizing: border-box;
+			    padding: 1rem 2rem;
+			    
+			    p{
+				    font: 18px $font_hel_medium;
+				    line-height: 28px;
+				    color: $color_white;
+			    }
+			    
+			    p.small{
+					font: 17px $font_hel_light_cond;
+				    line-height: 20px;
+				    text-align: right;
+			    }
+			    
+			}
+		}
+		
+	}
+	
+}

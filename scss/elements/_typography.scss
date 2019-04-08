@@ -1,0 +1,54 @@
+// -----------------------
+// typography
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	font-family: $font_hel_light;
+	font-size: $font_txt;
+	color: $color_text;
+	
+	
+	h1{
+		font-family: $font_hel_medium;
+		font-size: $font_titles;
+		color: $color_text_black;
+		
+		span{
+			color: $color_text_black;
+			margin-left: 2rem;
+		}
+		
+	}
+	
+	h2{
+		font-family: $font_hel_medium;
+		color: $color_text_black !important;
+		font-size: $font_titles;
+		max-width: 710px;
+		margin: 2rem auto 1rem;
+		display: block;
+		
+		span{
+			color: $color_white !important;
+			font-size: x-large;
+			background: $color_brand_blue;
+			display: block;
+			padding: 1rem;
+			margin-right: 4rem;
+		}
+		
+	}
+	
+	h3{
+		font-family: $font_hel_medium;
+		//font-size: $font_titles;
+		color: $color_text_black;
+		line-height: 24px;
+		margin: 0 auto 1rem;
+		max-width: 710px;
+		display: block;
+	}
+	
+}

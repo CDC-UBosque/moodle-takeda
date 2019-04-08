@@ -1,0 +1,60 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+			
+				h3 8. Conclusiones
+				
+				p Se han logrado avances significativos la comprensión de la patogénesis molecular del Mieloma múltiple.
+
+				p Las distintas vías moleculares se activan o inactivan por el microentorno del tumor y por mutaciones genéticas las cuales se acumulan a medida que avanza la enfermedad.
+				
+				p La patogenia de esta enfermedad tiene influencia de mediadores, alteraciones, aberraciones y / o desregulación en factores endocrinos, vasculares, genéticos y metabólicos.
+
+				p Por lo tanto, identificar y dirigirse a las vías moleculares correspondientes es crucial para trabajar en la administración óptima de terapias farmacológicas individualizadas en MM. Los aumentos o excesos en la adiposidad pueden contribuir al riesgo de MM a través de efectos pro-inflamatorios sistémicos o adiposidad específica de médula ósea. 
+
+				p Esta información se puede utilizar para mejorar el diagnóstico, el pronóstico y la estratificación del riesgo de los pacientes con el fin de que en algún momento de la historia el tratamiento pueda ser adaptado a la composición genética de cada paciente.
+				
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso80')
+
+ 
+							
+							
+							
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285751', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285753', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

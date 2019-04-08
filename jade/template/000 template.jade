@@ -1,0 +1,140 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+			
+				h2 Capítulo 1 / <span>Título del capítulo</span>
+				
+				p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round. Boudin andouille landjaeger, rump capicola jerky cupim ball tip. Meatball bacon tenderloin jowl prosciutto alcatra, tri-tip t-bone jerky shankle ball tip chuck cow fatback pastrami. Filet mignon t-bone buffalo pork loin meatloaf. Filet mignon bresaola swine prosciutto, leberkas turducken shankle flank pancetta buffalo chicken t-bone.
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+						li
+							a(href='#4' data-toggle='tab') 4
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						div.tab-pane.fade#2
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						div.tab-pane.fade#3
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						div.tab-pane.fade#4
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round. Boudin andouille landjaeger, rump capicola jerky cupim ball tip. Meatball bacon tenderloin jowl prosciutto alcatra, tri-tip t-bone jerky shankle ball tip chuck cow fatback pastrami. Filet mignon t-bone buffalo pork loin meatloaf. Filet mignon bresaola swine prosciutto, leberkas turducken shankle flank pancetta buffalo chicken t-bone.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round. Boudin andouille landjaeger, rump capicola jerky cupim ball tip. Meatball bacon tenderloin jowl prosciutto alcatra, tri-tip t-bone jerky shankle ball tip chuck cow fatback pastrami. Filet mignon t-bone buffalo pork loin meatloaf. Filet mignon bresaola swine prosciutto, leberkas turducken shankle flank pancetta buffalo chicken t-bone.
+								
+								
+							
+				//- Table
+				table.table.table-striped
+					caption Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+					thead
+						tr
+							th Spicy jalapeno
+							th Spicy jalapeno
+							th Spicy jalapeno
+					tbody
+						tr
+							td Spicy jalapeno
+							td Spicy jalapeno
+							td Spicy jalapeno
+						tr
+							td Spicy jalapeno
+							td Spicy jalapeno
+							td Spicy jalapeno
+					
+					
+				p.small Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+				
+										
+				//- Cards
+				ul.thumbnails
+					li.span4
+						div.thumbnail
+							img(src= 'http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg')
+							div.caption
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+								
+					li.span4
+						div.thumbnail
+							img(src= 'http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg')
+							div.caption
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+								
+					li.span4
+						div.thumbnail
+							img(src= 'http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg')
+							div.caption
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg' data-lightbox='example-1')
+									img.example-image(src='http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg' alt='image-1')
+					div.span4
+						div.img-footer
+							span Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+							
+							
+				//- texto resaltado
+				div.row-fluid
+					div.span10.resaltado-txt
+						p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						p.small Spicy jalapeno bacon ipsum dolor amet cow
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-1')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- pagination
+	+paginador('#', 'Anterior', '#', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

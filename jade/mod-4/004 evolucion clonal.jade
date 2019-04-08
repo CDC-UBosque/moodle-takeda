@@ -1,0 +1,143 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+			
+				h3 4. Evolución clonal en MM
+				
+				p Este término hace referencia  a la composición de clones al diagnóstico y  durante la progresión. 
+
+				p Al parecer esta enfermedad no se deriva  de una sola célula madre tumoral,  pueden existir subgrupos de células tumorales clonalmente diversas lo que  podría estar relacionado con la  aparición de enfermedad biclonal o el cambio de clase en la inmunoglobulina monoclonal en las recaídas. 
+
+				p Se ha observado a nivel experimental que hay un subconjunto de células madres cd38 - ,cd19+ y cd27+ .
+
+				p Durante la progresión de la gammapatía monoclonal a mieloma múltiple, las células iniciadoras de tumores pueden dar lugar a subclones que se detectan predominantemente en muestras de diagnóstico y albergan mutaciones únicas, x, que también podrían detectarse más adelante en la enfermedad recurrente (A) Especialmente en enfermedades de alto riesgo podrían haberse adquirido durante el tratamiento  mutaciones  adicionales xy que luego dominan en número en la recaída composición en la recaída. (B) Los subclones derivados de células iniciadoras de tumores que no fueron detectados  al diagnóstico inicial podrían dejar de ser latentes más adelante y evolucionar como clon dominante en la recaída con una mutación diferente, z. (C) Mientras que los clones con mutaciones no lineales únicas x o z se suponen Para ser más susceptibles a la terapia de rescate, es probable que los subclones impulsados ​​por mutaciones recientemente adquiridas (xy) sean resistentes a las terapias convencionales. Lo anterior se explica en la figura 2 a continuación. 
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura03.png' data-lightbox='example-3')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura03.png' alt='Figura 3')
+					div.span4
+						div.img-footer
+							span Figura 3. Referencia 13 
+							
+				p Mediante la técnica FISH (inmunofluorescencia ) y el análisis de aneuploidía de ADN  por  citometría de flujo, se pueden  observan alteraciones genómicas en más del 90% de los pacientes con MM por lo que se  podría deducir que la citogenética normal  proviene de células normales de la médula ósea  y no de células mielomatosas. 
+
+				p En el caso de MGUS y SMM  los cambios citogenéticas son más aún difíciles de detectar  por la baja población de células en proliferación, por medio del uso de  FISH se podrían detectar  hasta el 50% de los pacientes alteraciones genómicas.
+ 
+				p La anomalía citogenética que más se logra identificar es la hiperdiploidia y las translocaciones recurrentes que involucran la región 14q32, que contiene el gen IgH, la región de la cadena ligera λ en el cromosoma 22, o los genes de la cadena ligera κ en el cromosoma 2 al parecer con implicaciones en el desarrollo de alteraciones  de los plasmocitos. 
+
+				p La translocación de IgH detecta por FISH en el 47% de los pacientes con MGUS y en más del 70% de los pacientes con MM, la región de la cadena ligera λ en el 17% de los pacientes con MM y los genes de la cadena ligera κ en un número muy pequeño de pacientes. 
+				
+				p En la siguiente  tabla se observan las traslocaciones más comunes.
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 2 . Referencia 14
+					thead
+						tr
+							th(colspan='3') Alteraciones Citogenéticas Comunes
+						tr
+							th Anormalidad cromosómica
+							th Pacientes (%)
+							th Genes involucrados
+					tbody
+						tr
+							td Hyperdiploidy <br> Hypodiploid <br> Pseudodiploid
+							td 50- 60 <br> 20 <br> 15
+							td Desconocido <br>Desconocido <br>Desconocido
+						tr
+							td del(17p)
+							td 8
+							td p53
+						tr
+							td t(4:14)
+							td 15
+							td FGFR3, MMSET
+						tr
+							td t(11;14)
+							td 20
+							td Cyclin D1
+						tr
+							td t(14;16)
+							td 3
+							td c-MAF
+						tr
+							td t(14;20)
+							td 1
+							td MAFB
+						tr
+							td t(6p25 or 6p21;14)
+							td 1
+							td IRF4 or CCND3
+						tr
+							td t(8:14)
+							td 5
+							td c-Myc
+						tr
+							td t(9;14)
+							td &lt;1%
+							td PAX5
+						tr
+							td(colspan='3') Recently Identified Alterations 
+						tr
+							td 1q+
+							td 35%
+							td
+						tr
+							td 1p-
+							td 30%
+							td 
+						tr
+							td 5q+
+							td 50%
+							td 
+						tr
+							td 12p-
+							td 10%
+							td
+							
+				//- Progreso modulo
+				+progreso-modulo('progreso40')
+ 
+							
+							
+							
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285746', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285749', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

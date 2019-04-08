@@ -1,0 +1,97 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+			
+				h3 5. Subdivisión  del Mieloma Múltiple desde el punto de vista genético
+				
+				p Esta entidad se puede dividir   en dos subtipos genéticos dependiendo el  contenido  cromosómico. Uno de ellos es el mieloma
+					b “hiperdiploide” 
+					| el cual  se caracteriza por múltiples trisomías de los cromosomas 3, 5, 7, 9 11, 15, 19 y 21, y carece de translocaciones de genes de inmunoglobulina recurrentes.
+				
+				p La base de la selección no aleatoria de cromosomas impares se desconoce y esta subclase representa aproximadamente 40% de todos los casos de MM.
+
+				p  El otro subtipo es el  
+					b “no hiperdiploide” 
+					| contrario al  anterior tiene  translocaciones cromosómicas t (4; 14), t (14; 16), t (14; 20), t (6; 14) y t (11; 14).  (15). En este subtipo en el que  participa  el locus de la cadena pesada de inmunoglobulina (IgH) (14q32) o uno de los loci de la cadena ligera (j, 2p12 o k, 22q11) está  involucrado en translocaciones cromosómicas  en aproximadamente la mitad de casos de MGUS y MM y en el 85% de los casos de leucemia de células plasmáticas.
+					small (16) 
+
+				p Se piensa que el proceso de RSE  (recombinación de cambio de clase )   o SHM (hipermutación somática )  es responsable  de   puntos de ruptura  que se ubican alrededor de IgH (cadena pesada de inmunoglobulina ) , aunque ocasionalmente puede ocurrir cerca de secuencias de cadena variable ( VDJ ).
+
+				p En cuanto a las  translocaciones de cadena ligera implican el locus de la cadena lambda y están presentes en alrededor del 10% de MGUS / SMM, y aproximadamente el 15% de MM.
+					small (17)  
+
+				p La translocación cromosómica  recurrente es t (11; 14) (q13; q32), la cual se observa en  el 15-20% de los casos.
+
+				p La t (11; 14) con desregulación de CCND1 se halla en 15% de  MM, en cambio  CCND2 y CCND3 son menos frecuentes  &lt;1% y &lt;2% respectivamente. 
+
+				p En el  12- 15% de  los casos de MM se halla una translocación t (4:14) (p16; q32), con desregulación de MMSET  y en el 80 % de los casos  hay desregulación  del   FGFR3   ambos  en der14.
+
+				p 5% de los casos de MM tiene una translocación t (14; 16) con desregulación de MAF (oncogen MAF ) , y la  desregulación de MAFB (2%) y MAFA (&lt;1%) son menos comunes.
+
+				p Casi todos los tumores hiperdiploides tienen transdisregulación bialélica de ciclina D1.
+
+				p Los tumores no hiperdiploides a menudo tienen t (14q32) translocaciones que afectan los loci. En aproximadamente el 25% de ellos, una de las ciclinas de tipo D está disociada en cis por una translocación de 14q32, y en  otros tumores no hiperdiploides, la expresión de ciclina D2 es transregulada.
+
+				p El 11q13 regula al alza el gen de la ciclina D1,  y  4p16 conduce a desregulación de la ciclina D2. 
+				p En16q23 se encuentra el factor de transcripción MAF y en 20q11 se encuentra MAFB los cuales conducen a la   sobreexpresión de ciclina D2. Y finalmente intercambios en el locus 6p21 conduce a la sobreexpresión del gen de la ciclina D3 (CCND3). 
+
+				p Un subconjunto de  pacientes (15%) presentan tanto trisomías como translocaciones IgH.
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura04.png' data-lightbox='example-4')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura04.png' alt='Figura 4')
+					div.span4
+						div.img-footer
+							span Figura 4. Adaptado de referencia 18
+							
+				p Actualmente las causas de transformación de células plasmáticas no son muy bien entendidas, a pesar de esto la hiperdiploidía  más prevalente (trisomía 11 presente en el 30% de los casos) puede dar lugar a la sobreexpresión de ciclina D1.
+
+				p Los eventos genéticos secundarios incluyen anomalías en el número de copias (es decir, ganancia 1q), hipometilación del ADN y mutaciones adquiridas. 
+					small (19)
+					
+				//- Progreso modulo
+				+progreso-modulo('progreso50')
+ 
+							
+							
+							
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285748', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285750', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

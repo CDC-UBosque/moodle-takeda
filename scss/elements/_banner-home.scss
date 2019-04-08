@@ -1,0 +1,168 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.banner-home{
+		
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		
+		img{
+			//position: absolute;
+			display: block;
+		}
+		
+		h1{
+			position: absolute;
+			top: 37%;
+			left: 3%;
+			color: $color_white;
+			font-size: $font_banner_titles;
+			
+			span{
+				color: $color_white;
+			}
+			
+		}
+		
+	}
+	
+	.banner-cursos{
+		
+		position: relative;
+		display: inline-block;
+		max-height: 388px;
+		overflow: hidden;
+		background: $color_grey_light;
+		position: relative;
+		
+		&:before{
+			position: absolute;
+		    content: "";
+		    background: url(https://ubosquemoodle.unbosque.edu.co/diseno/cursos/amgen/images/logos/logo-amgen.svg);
+		    background-repeat: no-repeat;
+		    width: 5rem;
+		    height: 2rem;
+		    left: 1rem;
+		    top: 1rem;
+		}
+		
+		@media (max-width: 767px){
+			max-height: initial;
+		}
+		
+		.amgen-banner{
+			position: absolute;
+		}
+		
+		img{
+			//position: absolute;
+			display: block;
+		}
+		
+		.txt-banner{
+			
+			//position: relative;
+			
+			h1{
+				position: absolute;
+				top: 37%;
+				left: 2%;
+				//color: $color_white;
+				font-size: $font_banner_titles;
+				font-size: 28px;
+				line-height: 32px;
+				
+				@media (max-width: 1200px){
+					font-size: 1.5em;
+					line-height: 1.2em;
+					span{
+						margin-left: 0;
+					}
+				}
+				
+				@media (max-width: 960px){
+					font-size: 1.2em;
+				}
+				
+				@media (max-width: 767px){
+					position: relative;
+					margin-top: 4rem;
+					margin-bottom: 2rem;
+					font-size: 28px;
+					line-height: 32px;
+				}
+				
+			}
+			
+		}
+		
+		.tabbable{
+			
+			.nav-tabs{
+				border-right: 1px solid $color_brand_blue;
+				margin-right: 0px;
+				
+				a{
+					border-radius: 0px;
+					margin-right: 0px;
+					border: 0px;
+					text-decoration: none;
+					background: $color_brand_blue;
+					color: $color_white;
+					font-family: $font_hel_medium;
+					
+					&:hover{
+						background: $color_brand_blue;
+						color: $color_white;
+						border: 0px;
+					}
+				}
+				
+				.active{
+					background: $color_brand_blue;
+					color: $color_white;
+					
+					a{
+						background: none;
+						border: 0px;
+						color: $color_white;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	#banner-mod-0.banner-cursos{
+		
+		.txt-banner{
+			
+			//position: relative;
+			
+			h1{
+				position: relative;
+				margin: 3rem 0 1rem 1rem;
+				//color: $color_white;
+				font-size: $font_banner_titles;
+				
+				@media (max-width: 767px){
+					position: relative;
+					margin-top: 4rem;
+					margin-bottom: 2rem;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,82 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc::-webkit-scrollbar {
+    width:0!important;
+}
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	overflow-y: visible;
+	
+	.codigo-modulo{
+			p{
+				text-align: center;
+				font-size: .6rem;
+			}
+		}
+	
+	.content-cc{
+		box-sizing: border-box;
+		
+		
+		
+		p{
+			font-family: $font_hel_light;
+			font-size: $font_txt;
+			line-height: 27px;
+			max-width: 710px;
+			margin: auto;
+			letter-spacing: 0.4px;
+			
+			small{
+				font-size: small;
+				font-family: $font_hel_light_italic;
+				text-align: center;
+			}
+			
+		}
+		
+		p.small{
+			font-size: small;
+			font-family: $font_hel_light_italic;
+			text-align: center;
+		}
+		
+		.row-fluid{
+			margin-top: 2rem;
+			
+			div[ class*="span12"]{
+				margin-left: 0;
+			}
+			
+		}
+		
+		iframe#resourceobject{
+			width:100% !important;
+		}
+		
+		ul, ol{
+			margin: 2rem auto;
+		    max-width: 710px;
+		    padding-left: 5rem;
+			
+			li{
+				margin-bottom: 1rem;
+				font-family: $font_hel_light;
+				font-size: $font_txt;
+				line-height: 27px;
+			}
+			
+		}
+		
+		a{
+			color: $color_brand_blue;
+			transition: all .2s ease-in-out;
+		}
+		
+	}
+	
+}

@@ -1,0 +1,76 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.material-modulo{
+		
+		background: transparentize($color_brand_blue, .8);
+		padding: 2rem 2rem 1rem;
+		box-sizing: border-box;
+		margin: 4rem 0 2rem;
+		
+		h2{
+			max-width: initial;
+			
+			span{
+				background: none;
+				color: $color_text_black !important;
+				margin: 0 0 1rem;
+				padding: 0;
+			}
+			
+		}
+		
+		.thumbnails{
+			
+			margin: 0;
+			padding: 0;
+			max-width: initial;
+			
+			.thumbnail{
+				background: $color_white;
+			    border: 0;
+			    border-radius: 0;
+			    box-shadow: none;
+			    padding: 0;
+			    
+			    img{
+				    width: 100%;
+			    }
+			    
+			    .caption{
+				    color: $color_text;
+				    padding: 1rem 2rem;
+				    
+				    h3{
+					    font-family: $font_hel_medium;
+					    color: $color_brand_blue;
+					    display: block;
+				    }
+				    
+				    p{
+					    font-family: $font_hel_light_cond;
+					    font-size: 14px;
+					    line-height: 22px;
+					    
+					    a{
+						    color: $color_white;
+						    &:hover{
+							    color: $color_brand_blue;
+						    }
+					    }
+					    
+				    }
+				    
+			    }
+			    
+			}
+			
+		}
+		
+	}
+	
+}

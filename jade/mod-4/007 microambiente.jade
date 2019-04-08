@@ -1,0 +1,185 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+			
+				h3 7. Microambiente
+				
+				p Existe un microambiente  de la médula ósea (BMM) que permite la interacción celular la cual puede darse de varias maneras: célula-célula, célula-matriz, factores de crecimiento y citoquinas. 
+
+				p Los componentes celulares presentes en el microambiente son células hematopoyéticas y células no hematopoyéticas. Dentro de las primeras se incluyen células B y T, células natural killer, células supresoras derivadas mieloide, osteoclastos (resorción ósea), y dentro de las segundas células estromales, osteoblastos (formación ósea) y células endoteliales. Todas estas células pueden secretar factores que contribuyen a la migración y proliferación de células plasmáticas y contribuir al daño óseo.
+
+				p Este es un nicho dinámico, el cual puede reparar daños y responder a niveles de energía sistémicos, mediadores inflamatorios y señales endocrinas.
+					small (24) 
+
+				p Existe un estado hipóxico dentro de la médula ósea  en el cual están presenten mediadores inflamatorios, especies reactivas de oxígeno (ROS) y los compuestos intermedios reactivos de nitrógeno (RNI). 
+
+				p Según  Morgan Walker y Davies
+					small (25)
+					| “todas estas características del BMM permiten la infiltración, el crecimiento, la proliferación, la adhesión y la migración de las células MM, proporcionan a su vez el sustento estructural y nutricional para albergar células MM inactivas y resistentes a los medicamentos”.
+
+				p Entre los agentes inflamatorios están incluidos citoquinas, quimiocinas, adipocinas como la adiponectina y leptina) y factores de crecimiento como IL-6, IGF-1, VEGF, TNF-α y SDF-1) los cuales son secretados por macrófagos, neutrófilos entre otras células. Los anteriores contribuyen al crecimiento tumoral, daño a células citotoxicidad y resistencia a fármacos. 
+
+				p Al parecer un micro entorno hipóxico induce inestabilidad genómica pero este punto aún está en investigación 
+
+				p Se cree que los tumores y el microambiente se comunican bidireccionalmente y pueden alterarse mutuamente  contribuyendo al mantenimiento tanto de una médula ósea sana o favoreciendo la supervivencia tumoral
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura06.png' data-lightbox='example-6')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura06.png' alt='Figura 6')
+					div.span4
+						div.img-footer
+							span Figura 6. Adaptado de Referencia 26
+							
+				p Cada célula cumple una función en el mantenimiento del microambiente y a su vez en la progresión a MM  como se describe a continuación:
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1')
+								span Células madre mesenquimales
+						div#collapse1.accordion-body.collapse.in
+							div.accordion-inner
+								p Sirven como progenitores comunes para varias células como  es el caso de osteoblastos (OB), osteocitos (OC) y adipocitos.  Tiene capacidad de auto-renovación, diferenciación, señalización celular, e inmunomodulación.
+									small (27)
+
+								p La enfermedad del hueso de mieloma (MBD) se presenta en forma de lesiones  líticas  u osteopenia por aumento de la actividad de los osteoclastos e inhibición de la actividad osteoclástica.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2')
+								span Los osteoblastos (OB) 
+						div#collapse2.accordion-body.collapse
+							div.accordion-inner
+								p Producen y mineralizan osteoides óseos a medida que los osteoclastos reabsorben el hueso. Normalmente bajo activación de los osteoclastos los osteoblastos  reconstruyen matrices de  huesos sanos. El crecimiento de estos  durante el mieloma se detiene  haciendo predominio de reabsorción osteoclástica desequilibrada y un recambio óseo anormal.  Los osteoblastos producen factores de crecimiento  como la osteocalcina, la osteopontina, el FGF y el TGFβ ayudando a sobrevivir a los plasmocitos tumorales.
+									small (28)
+									
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+								span Osteoclastos
+						div#collapse3.accordion-body.collapse
+							div.accordion-inner
+								p Los osteoclastos (OC)  son los mediadores primarios de la resorción ósea en el recambio óseo sano y  patológico por medio de la activación  por varias citoquinas y vías de señalización. 
+								
+								p Por medio de la lisis patológica del hueso se libera calcio, factores de crecimiento y proteínas de la matriz extracelular (MEC) lo cual favorece el crecimiento, supervivencia del tumor, y reactivación de células latentes por eso la terapia con bifosfonatos es tan importante. 
+
+								p La vía de señalización RANK / RANKL / OPG mantiene el equilibrio entre la remodelación ósea y la reabsorción, se ha documentado disregulación en la enfermedad ósea metastasica  y el MM. Esta vía es neutralizada por el denosumab.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4')
+								span Osteocitos
+						div#collapse4.accordion-body.collapse
+							div.accordion-inner
+								p Se ubican  en las grietas dentro del hueso regulan la respuesta del hueso al estrés mecánico a través de la secreción de factores que incluyen esclerostina y RANKL en el BMM para modular la actividad de los osteoblastos y los osteoclastos.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5')
+								span Esclerostina
+						div#collapse5.accordion-body.collapse
+							div.accordion-inner
+								p Entre más activa este la enfermedad más elevados los niveles, sobre todo en aquellos pacientes con fracturas. Se desconoce por quien es producida.
+									small (29)
+									
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse6')
+								span Adipocitos
+						div#collapse6.accordion-body.collapse
+							div.accordion-inner
+								p Sirven como reserva de energía en el microambiente  y expresan adipocinas (leptina y adiponectina) y factores de crecimiento que promueven la génesis del MM  y la progresión, por eso se considera la obesidad como un factor de riesgo.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse7')
+								span Factores inmunomoduladores
+						div#collapse7.accordion-body.collapse
+							div.accordion-inner
+								p Existen los osteomac (macrófagos específicos del tejido), otros macrófagos, neutrófilos y células supresoras  de derivados  mieloides que  pueden afectar el recambio óseo por medio de la respuesta al estrés.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse8')
+								span Células endoteliales
+						div#collapse8.accordion-body.collapse
+							div.accordion-inner
+								p Las células  endoteliales de la  BM expresan proteínas de adhesión que permiten el rodaje y la intravasación de células MM a través de capilares de BM fenestrados.  Estimulan  la secreción de VEGF promoviendo la vasculogénesis y  la vascularización del hueso infiltrado con MM.
+								
+				p Para entender la interacción entre los  diversos elementos mencionados del microambiente se puede analizar la figura 6 
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura07.png' data-lightbox='example-7')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura07.png' alt='Figura 7')
+					div.span4
+						div.img-footer
+							span Figura 7. Adaptado de Referencia 6
+							
+				p Se encuentra la célula estromal de la médula ósea (BMSC), la cual crea un nicho favorable para el crecimiento. Existe la proteína de adhesión celular vascular 1 (VCAM1) en la superficie de esa célula la cual tiene interacción con la célula del mieloma , siendo producida por esta interaccion citoquinas 
+
+				p El ligando 12 de quimiocina CXC (CXCL12; también conocido como SDF1) es expresado por BMSCs, osteoblastos, células endoteliales y células de mieloma múltiple . Cuando es producido por  BMSC se une a la quimiocina CXC receptor tipo 4 (CXCR4) en células de mieloma múltiple lo que ayuda a la migración de células de mieloma a la médula ósea.
+				
+				p Otros factores  que son   producidos por BMSCs incluyen Jagged (que activa Notch en células de mieloma) y factor de crecimiento endotelial vascular (VEGF promotor de la angiogénesis). 
+				
+				p Factores como el activador del receptor del factor nuclear-κB ligando (RANKL; también conocido como TNFSF11) y el ligando de quimiocinas CC 3 (CCL3) están involucrados en la diferenciación de los osteoclastos precursores a osteoclastos maduros lo cual contribuye a la  destrucción ósea 
+
+				p Los  Macrófagos  en el microambiente producen  IL-1β, que actúan sobre las células estromales e inducen la IL-6 , esta IL6 cuya producción también puede estar a cargo de  varias células (  BMSCs, células T, células B, monocitos y células mielomatosas promueve la proliferación de células de mieloma múltiple y resistencia a la apoptosis)
+
+				p La matriz extracelular (MEC)  se compone de varias proteínas como la  fibronectina (FN), laminina y colágeno.  CD138 (sindecan 1) une directamente a ECM  proteínas como la fibronectina al parecer relacionado con la resistencia a fármacos.
+				
+				p Existe otro  ligando que induce la proliferación (APRIL o TNFSF13), producido por monocitos y osteoclastos pudiendo  provocar la activación de factores inlcuyendi  factor nuclear κB (NF κB).
+				
+				p Por la expresión del  PDL1  (ligando de  muerte celular programada 1) las células de mieloma múltiple afectan negativamente a las células T, constituyéndose en un mecanismo de evasión inmune por parte de células mielomatosas.
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso70')
+
+ 
+							
+							
+							
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285750', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285752', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

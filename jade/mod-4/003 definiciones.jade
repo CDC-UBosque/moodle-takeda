@@ -1,0 +1,93 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+			
+				h3 3. Definiciones
+				
+				p La gammapatía monoclonal de importancia indeterminada (MGUS) está  presente en el 4% de las personas mayores de 50 años y puede progresar a MM a una velocidad de 1% por año. 
+
+				p MGUS se caracteriza por tener una pico monoclonal &lt;30 g / L, y menos del 10% células plasmáticas clonales de la médula ósea (cBMPC) y sin eventos definitorios de mieloma.
+					small (9)
+
+				p La definición de MM es la presencia de ≥10% de cBMPC con uno o más eventos definitorios  los cuales se pueden encontrar en la siguiente tabla:
+				
+				p A continuación los Criterios diagnósticos  de MGUS, Mieloma Smoldering y Mieloma Múltiple. 
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 1. Referencia 10
+					thead
+						tr
+							th
+							th MGUS no lg M
+							th Mieloma Smoldering
+							th Mieloma Múltiple
+					tbody
+						tr
+							td Células plasmáticas en médula ósea
+							td &lt;10%
+							td >10 - 60%
+							td >10 en biopsoa o plasmocitoma
+						tr
+							td Pico Monoclonal
+							td (Y) menor &lt;3gr/dL en suero y &lt;500mg/día en orina
+							td o <br/> >3g/dl en suero o >500mg/día en orina
+							td
+						tr
+							td Eventos definitorios de Mieloma
+							td Ninguno
+							td Ninguno
+							td Y <br/> >1 <br/> -
+						tr
+							td Eventos definitorios de Mieloma
+							td(colspan='3') Hipercalcemia (calcio > 11mg/dl) <br/> Falla renal (depuración de creatinina &lt;40 mL/min o creatinina >2 mg/dl) <br/> Anemia hemoglobina &lt; 10g/dL) <br/> >1 lesión litica en rayos X, TAC o PET CT <br/> >60% de células plasmáticas en médula ósea <br/> Relación de cadenas ligeras comprometidas /no comprometidas > 100 > de 1 lesión focal en resonancia magnética
+				
+				p Las células de mieloma múltiple son similares a las de  células plasmáticas de larga vida post-germinal. Se caracterizan por una fuerte dependencia de la médula ósea, hipermutación somática de genes de inmunoglobulina, y ausencia de expresión de IgM. La diferencia radica  en que las células mielomatosas tienen  potencial para volver a un estado proliferativo más bajo.
+					small (11) 
+
+				p Las anomalías cromosómicas utilizando la citogenética convencional en pacientes recién diagnosticados son detectados en solo 30% a 50% de los pacientes, debido a la baja proliferación mencionada y en etapas más avnazadas se pueden detectar un mayor número de anomalías. 
+
+				p Durante una respuesta inmune secundaria, los linfocitos activados migran a los centros germinales (GC) para  someterse a la selección de antígenos por múltiples rondas de hipermutación somática (SHM) e IgH recombinación de cambio de clase (CSR). Las células cuyo receptor de células B pierde afinidad por el antígeno se seleccionan en contra y se someten a apoptosis, mientras que las células seleccionadas positivamente se rescatan de apoptosis por expresión de BCL2 y se diferencian en células de memoria o blastos plasmáticos  (PB) antes de regresar a la médula ósea (BM)  como  célula plasmática (PC)  de larga duración. Aunque las PC de corta duración pre-GC también pueden generarse durante la respuesta inmune primaria, la presencia de mutaciones somáticas en la los genes de inmunoglobulina sin remodelación adicional indican claramente un origen post-GC para MM.
+					small (12) 
+					
+				//- Progreso modulo
+				+progreso-modulo('progreso30')
+							
+							
+							
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285745', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285748', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

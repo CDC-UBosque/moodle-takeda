@@ -1,0 +1,107 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+			
+				h3 2. Formación de  los plasmocitos o células plasmáticas
+				
+				p Las células plasmáticas son células diferenciadas de las células  del linaje  linfoide que han experimentado hipermutación somática y la recombinación de cambio de clase adquiriendo la capacidad de  producir inmunoglobulinas específicas (antígenos con diferentes propiedades).  
+
+				p En la figura 1 se describe el siguiente proceso  
+
+				p Una vez que las células foliculares se encuentran con el antígeno se diferencian en células plasmáticas de vida corta las cuales sufren un proceso de apoptosis. 
+				
+				p Algunas células foliculares activadas forman un centro germinal (GC),  sometiéndose a hipermutación somática, selección de antígenos  y  recombinación de la cadena pesada de Inmunoglobulina (Ig). 
+				
+				p Las células plasmáticas  post-centrogerminal (post-GC) pueden tomar 2 caminos: progresar a un estadio de células B de memoria  o a células plasmáticas, estas últimas se vuelven de larga vida si encuentran nichos para sobrevivir en el hueso como se verá más adelante. 
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura01.png' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura01.png' alt='Figura 1')
+					div.span4
+						div.img-footer
+							span Figura 1. Ver Referencia 5 
+							
+				p Para efectos de esta revisión vamos a tener en cuenta  la definición de MGUS (Gammapatía monoclonal de importancia indeterminada (MGUS), Mieloma smoldering, asintomático  o latente (MS)  ya que  todos los casos de Mieloma múltiple sin excepción son precedidos de un estado de MGUS. Comienza como una (MGUS), progresa hacia un mieloma latente (MS) y finalmente se convierte en un mieloma (sintomático) manifiesto, resultando en una infiltración de la médula ósea (BM ) y lesiones osteolíticas. 
+
+				p No está claro el mecanismo  de  la transformación de las células plasmáticas normales hasta llegar a MGUS y luego el mecanismo una vez que la célula plasmática ya está establecida como  anormal para  conducir  a Mieloma Múltiple sintomático o asintomático.  Durante estos pasos de progresión al parecer  el equilibrio normal entre la actividad osteoblástica (construcción ósea) y osteoclástica (ruptura y reabsorción ósea) está abalanzado hacia la pérdida ósea neta. Esta destrucción ósea (osteólisis) causa liberación de factores de crecimiento incrustados en la matriz ósea, alimentando  la progresión y la expansión del MM en el nicho de BM dando  como resultado una mayor actividad osteoclástica en un proceso conocido como el ciclo vicioso 
+					small (6) .
+
+				p Hay  similitudes  biológicas entre estas etapas de la enfermedad.
+				
+				p Los eventos en el desarrollo de MGUS, SMM y mieloma múltiple incluyen translocaciones cromosómicas que involucran genes de cadena pesada de inmunoglobulina (IGH) y aneuploidía (con la hiperdiploidía como la entidad más frecuente). El número de las  alteraciones genéticas secundarias aumentan de MGUS a SMM y luego a mieloma múltiple.
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura02.png' data-lightbox='example-2')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod1/figura02.png' alt='Figura 2')
+					div.span4
+						div.img-footer
+							span A estos eventos los vamos a denominar eventos genéticos primarios y eventos genéticos secundarios. Figura 2. Referencia 7 
+							
+				p Dentro de los  primarios encontramos las   translocaciones cromosómicas y aneuploidía) las  cuales pueden marcar la transición de MGUS y SMM a mieloma múltiple, dependiendo las  características genéticas y epigenéticas de los pacientes.
+				
+				p Las Aberraciones como la  metilación del ADN y microARN  son las que más pueden progresar al mieloma múltiple.
+
+				p A su vez dentro de los defectos cromosómicos se hallan las  translocaciones que involucran IGH (genes que codifican las cadenas  pesadas de  inmunoglobulina)  y un conjunto limitado de genes asociados recurrentes (como NSD2  también denominado MMSET), FGFR3 (receptor de codificación  factor de crecimiento de fibroblastos 3) y CCND1  (que codifica ciclina D1). 
+
+				p De hecho, la fusión de IGH a otros genes  resulta en la expresión mejorada de los genes asociados.
+
+				p El mecanismo subyacente de las translocaciones  es en su mayoría recombinación anormal de cambio de clase  durante la formación de los plasmocitos, pero  existen otros mecanismos como  reordenamiento anormal de V (D) J, aunque estos últimos ocurren en menor proporción. 
+
+				p Lo que si se conoce hasta el momento  es que en el primer paso mencionado  está presente  la desregulación de la familia de las proteínas ciclina D (ciclinas D1, D2 y D3) parece ser una anormalidad presente en  etapas tempranas. Los mecanismos para que esta desregulación ocurra  incluyen: 
+				
+				ol
+					li Translocaciones de CCND1 (ciclina D1) y CCND3 (ciclina D3) con el gen IgH (inmunoglobulina pesada ) .  Las Translocación t (11; 14) se encuentra en el 14% de todos los mieloma  y produce aumento de la expresión de CCND1, cuyo producto, ciclina D1, es importante para la progresión del ciclo celular.
+					li Amplificaciones específicas del gen de ciclina D.
+					li Trisomías.
+					li Otros eventos citogenéticos no caracterizados.
+					
+				p Esta expresión de ciclina D al parecer no es suficiente en sí misma para el accionamiento de  MGUS a MM.
+					small (8)
+					
+				//- Progreso modulo
+				+progreso-modulo('progreso20')
+				
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/course/view.php?id=4228#', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285746', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

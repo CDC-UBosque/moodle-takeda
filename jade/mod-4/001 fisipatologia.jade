@@ -1,0 +1,62 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-4
+				
+				h3 1. Fisiopatología del Mieloma Múltiple
+				
+				p El Mieloma Múltiple (MM) es una de las neoplasias más difíciles de tratar, más incurables y se caracteriza por la infiltración y crecimiento de células plasmáticas malignas en la médula ósea.
+					small (1) 
+				
+				p Este crecimiento es incontrolado y conduce a la sobreproducción de Inmunoglobulinas o cadenas de inmunoglobulinas intactas no funcionales. Cuando estas se acumulan o participan en la interacción celular causan problemas clínicos (componente CRAB = hipercalcemia, falla renal, anemia y lesiones óseas).
+
+				p Existe un gran espectro de entidades producidas por estas células plasmáticas clónales o malignas. La organización Mundial de la Salud en su última  revisión de la clasificación de neoplasias linfoides en el año 2016 emite las diferencias entre MM de otros trastornos producidos por estas mismas células como los son la gammapatía monoclonal de significado indeterminado (MGUS), plasmocitoma solitario de hueso, plasmocitoma extraóseo y monoclonal, enfermedades por depósito de inmunoglobulinas.
+					small (2) 
+
+				p El riesgo de desarrollar MM es más alto en los grupos de mayor edad, mientras que es mucho más infrecuente en pacientes menores de 45 años. La edad media al diagnóstico es de 65 años y La supervivencia actual a 5 años es de aproximadamente 46.6%.
+					small (3) 
+
+				p Al parecer la mayoría de pacientes tienen MGUS 2 años antes de desarrollar MM y el riesgo aumenta en población masculina, afromaericana, con antecedente de inmunodeficiencia, enfermedad cardiovasculares, obesidad ,diabetes mellitus tipo II hipoxia del microntorno del tumor, e inestabilidad genómica.
+					small (4)
+
+				p Para entender el mieloma múltiple es bueno entender el  desarrollo de las células B y la biología de las células plasmáticas.
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso10')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+	
+	//- pagination
+	+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285745', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,102 @@
+//- ---------------------------- menu ------------------------------- //
+mixin menu
+	div#menu
+
+//- ---------------------------- footer ------------------------------- //
+mixin footer
+	div.container-fluid
+		div.row-fluid
+			div.span#footer
+			
+mixin footer-interno
+	div.container-fluid
+		div.row-fluid
+			div.span#footer-2
+			
+//- ---------------------------- banner ------------------------------- //
+mixin banner
+	div.banner-home#banner-home
+
+//- ---------------------------- paginador ------------------------------- //
+mixin link(href, name)
+	//- attributes == {class: "btn"}
+	a(href=href)= name
+	
+	//- +link('/foo', 'foo')(class="btn")
+
+mixin paginador(linkatras, class1, Anterior, linkadelante, class2, Siguiente)
+	div.container-fluid
+		div.row-fluid
+			ul.pager
+				li.previous
+					a(href=linkatras class=class1)= Anterior
+				li.next
+					a(href=linkadelante class=class2)= Siguiente
+					
+//- ---------------------------- progreso modulo ------------------------------- //					
+mixin progreso-modulo(numero)
+	div.progreso
+		h2 Progreso módulo
+		div(id=numero)
+
+//- ---------------------------- material modulo ------------------------------- //
+mixin material-modulo(id)
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.material-modulo
+			div(id=id)
+			
+//- ---------------------------- Codigos modulos ------------------------------- //
+mixin codigo-modulo-0
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.codigo-modulo
+			p.small Carta Bienvenida Dr. Martínez: CO/ONC/1902/0002h
+			
+mixin codigo-modulo-1
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.codigo-modulo
+			p.small Modulo 1: CO/ONC/1902/0002f – Patogénesis - Linfoma 
+			
+mixin codigo-modulo-2
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.codigo-modulo
+			p.small Modulo 2: CO/ONC/1902/0002d – Diagnóstico y estadificación - Linfoma
+			
+mixin codigo-modulo-3
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.codigo-modulo
+			p.small Modulo 3: CO/ONC/1902/0002j – Tratamiento – Linfoma
+			
+mixin codigo-modulo-4
+	div.continer-fluid
+		div.row-fluid.wow.fadeInUp.codigo-modulo
+			p.small Modulo 4: CO/ONC/1902/0002b – Fisiopatología - Mieloma
+			
+mixin codigo-modulo-5
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.codigo-modulo
+			p.small Modulo 5: CO/ONC/1902/0002c – Diagnóstico - Mieloma
+			
+mixin codigo-modulo-6
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.codigo-modulo
+			p.small Modulo 6: CO/ONC/1902/0002e – Tratamiento - Mieloma
+				
+				
+//- ---------------------------- titulos modulos ------------------------------- //
+mixin titulo-modulo-2
+	h2 Módulo 2 / 
+		span Epidemiología, diagnóstico y diagnóstico diferencial del Mieloma Múltiple
+		
+mixin titulo-modulo-3
+	h2 Módulo 3 / 
+		span XXXXXXXX
+		
+mixin titulo-modulo-4
+	h2 Módulo 4 / 
+		span Fisiopatología del Mieloma Múltiple
+				
+				
+				
+				
+				
+				

@@ -1,0 +1,49 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+			
+				h2 Módulo 1 / <span>Patogénesis del Linfoma Hodgkin, linfoma T periférico y linfoma cutáneo</span>
+				
+				h3 1. Introducción
+				
+				p Las neoplasias originadas en los tejidos linfoides constituyen un grupo de entidades diversas en su origen celular, presentación clínica, características histológicas, pronóstico y tratamiento. Siguiendo la estructura del sistema inmune, las neoplasias linfoides pueden ser clasificadas como aquellas originadas en células encargadas de la inmunidad innata o adaptativa, tanto de células precursoras como maduras. De acuerdo con la cuarta edición de la clasificación de los tumores del tejido linfoide y hematopoyético de la Organización Mundial de la Salud (OMS), las neoplasias de células precursoras son las leucemias y linfomas linfoblástico de linaje B, T o NK-Linfoblástico y las neoplasias de células maduras son un gran grupo de entidades que pueden tener origen en células B, T o NK y que pueden ser identificadas por sus características clínicas, hallazgos morfológicos en las coloraciones de rutina, expresión de un inmunofenotipo característico, alteraciones genéticas específicas y anormalidades moleculares que se relacionan; en la mayoría de los casos, con la patogénesis (1). 
+
+				p En este módulo se presentan los aspectos patogénicos de tres entidades: el linfoma Hodgkin, tanto las formas clásicas como no clásicas; los linfomas T periféricos y los linfomas cutáneos. El avance en el conocimiento de estas entidades ha permitido el desarrollo de tratamiento dirigidos y una mejoría del pronóstico, pero ha generado a la vez un gran volumen de información que hace imposible abarcar de forma detallada todos los aspectos moleculares descritos, siendo necesaria la revisión personal de los documentos recomendados de profundización en cada sección. 
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso10')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-1')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-1
+	
+	//- pagination
+	+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=291684', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
