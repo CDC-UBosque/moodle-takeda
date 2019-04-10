@@ -1,0 +1,44 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+			
+				h2 Diplomado / <span>Mieloma-Linfoma: “Retos en diagnóstico y terapias novedosas”</span>
+				
+				h3 Directrices aval académico
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/pdf/mod0/Directrices-Diplomado-Linfoma-Mieloma-26032019_rev_02042019.pdf" frameborder="0" allowfullscreen)
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section	
+	+codigo-modulo-0
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=292951', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=291742', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

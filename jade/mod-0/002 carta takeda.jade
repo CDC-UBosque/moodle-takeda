@@ -1,0 +1,46 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+			
+				h2 Diplomado / <span>Mieloma-Linfoma: “Retos en diagnóstico y terapias novedosas”</span>
+				
+				h3 Apreciados colegas, 
+				
+				p Es para nosotros un honor poder compartir con cada uno de ustedes el Diplomado “Linfoma - Mieloma: Retos en diagnóstico y terapias novedosas”, cuyo contenido está dirigido específicamente a hematólogos y residentes de hematología de nuestro país, profesionales de la salud enfrentados diariamente al manejo del Mieloma Múltiple, el Linfoma Cutáneo, Linfoma de células T y el Linfoma de Hodgkin, patologías complejas que requieren la revisión de la literatura de forma constante. 
+				p El objetivo de esta actividad es proveer una actualización agradable y didáctica sobre los nuevos conceptos en estas enfermedades enfocándonos específicamente en la fisiopatología, diagnóstico y tratamiento. Lo anterior, con el fin de orientar la actividad clínica hacia un manejo óptimo y práctico de los pacientes. 
+				p Al final de la actividad, el estudiante tendrá un incremento en el conocimiento de los conceptos fisiopatológicos de cada una de las enfermedades a tratar, una mejor compresión sobre las herramientas diagnósticas, así como un mejor discernimiento de la utilización racional de las estrategias terapéuticas disponibles en nuestro país. 
+				p ¡Sean todos bienvenidos a este programa!
+				
+				h3 Humberto Martínez Cordero
+				h3 Director Académico Diplomado
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section	
+	+codigo-modulo-0
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=285720', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=292952', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
