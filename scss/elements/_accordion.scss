@@ -55,7 +55,7 @@
 				}
 				
 				.accordion-body{
-					background: $color_grey_light;
+					background: transparentize($color_grey, .96);
 				}
 				
 				.accordion-body.show{

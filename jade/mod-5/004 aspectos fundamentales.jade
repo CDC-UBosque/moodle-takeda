@@ -1,0 +1,295 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-5
+				
+				h3 4. Aspectos fundamentales de la estadificación
+				
+				p Los principios generales de la estadificación son aplicables a todos los linfomas nodales. Ante el diagnóstico clínico y patológico de linfoma, los estudios de estadificación buscan evaluar la extensión del compromiso nodal, la presencia de compromiso en órganos no ganglionares, la presencia de comorbilidades o condiciones como las infecciones por virus de hepatitis o inmunodeficiencia humana y la identificación de valores de laboratorio anormales que tienen implicaciones pronósticas o predictivas como la deshidrogenasa láctica, la albúmina, la beta2microglobulina y otros. 
+				p Para los pacientes con Linfoma Hodgkin, la asignación a un estadio o grupo de riesgo depende de la combinación de la extensión del compromiso ganglionar o extra-ganglionar por la enfermedad y de la identificación de factores de riesgo como la presencia de síntomas B, el compromiso extranodal, la afectación de más de tres áreas nodales o el compromiso mediastinal bultoso con una masa que ocupe mas de un tercio del diámetro mayor del tórax. La guía colombiana para el diagnóstico, tratamiento y seguimiento del linfoma,
+					a(href="http://gpc.minsalud.gov.co/gpc_sites/Repositorio/Conv_563/GPC_Linfoma_Mayores_18A%C3%B1os/gpc_gpc_plantilla_gpc_profesionales.aspx" target="_blank")  (http://gpc.minsalud.gov.co/gpc_sites/Repositorio/Conv_563/GPC_Linfoma_Mayores_18A%C3%B1os/gpc_gpc_plantilla_gpc_profesionales.aspx)  
+					| , sugiere la utilización del sistema de estadificación de Lugano, el cual clasifica los pacientes en cuatro estadios diferentes de acuerdo a la extensión del compromiso. La incorporación de estudios de imagen funcional como el PET-CT es también sugerida para la estadificación de estos pacientes. La criterios de estadificación de Lugano también han incorporado dentro de sus recomendaciones de estadificación la realización de PET-CT (35). En aquellos casos en que la estadificación es realizada mediante PET CT, se considera que no es indispensable la realización de biopsia de médula ósea. Si no es posible la realización de PET-CT, la realización de estudios de imagen de tomografía se considera apropiada para la estadificación, aunque existen diferencias entre los dos métodos en cuento a sensibilidad y especificidad para detección del compromiso nodal y extranodal. 
+				p En todos los casos se asume además la realización de una historia clínica detallada y un examen físico completo, con registro de todas las áreas nodales afectadas y otras anormalidades que sean clínicamente evidentes.  La Tabla 1 presenta los estadios definidos por el sistema de Lugano.
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 1. Sistema de estadificación de Lugano
+					thead
+						tr
+							th Estadio
+							th Nodal
+							th Extranodal
+					tbody
+						tr
+							td I
+							td Un ganglio o un grupo de ganglios adyacentes
+							td Una lesión extranodal única sin compromiso nodal 
+						tr
+							td II
+							td Dos o más grupos nodales del mismo lado del diafrágma 
+							td Estadio I o II por compromiso nodal con compromiso extranodal contiguo limitado 
+						tr
+							td III
+							td Ganglios a ambos lados del diafrágma; ganglios por encima del diafragma con compromiso esplénico 
+							td No aplicable 
+						tr
+							td IV
+							td Compromiso adicional extralinfático no continuo 
+							td No aplicable 
+							
+							
+				p La estadificación de los linfomas T nodales, incluyendo el PTCL-NOS y el ALCL ALK+ y ALK-, sigue los mismos principios de estadificación que el linfoma Hodgkin, siendo recomendada la realización de estudios de imagen por tomografía y la realización de PET-CT si el mismo está disponible. 
+				p Para el caso de los linfomas cutáneos, existen definiciones específicas de los estadios de acuerdo con la clasificación del TNM para la MF y el SS, que incluyen el compromiso de la sangre periférica por las células tumorales (TNMB). En estos casos, la realización de un examen físico detallado que incluya la palpación de las áreas nodales y la realización de imágenes de tomografía en los casos en que se identifique compromiso nodal o se sospecha extensión extranodal, permite en conjunto con los estudios de la sangre periférica por citometría de flujo y evaluación morfológica, estadificar apropiadamente cada caso como se presenta en la Tabla 2. 
+				p La estadificación tiene implicaciones pronósticas y terapéuticas y es por tanto fundamental que sea realizada por un grupo multidisciplinario de atención que incluya hematólogos, dermatólogos, radiólogos y especialistas de laboratorio (36). La estadificación de los pacientes con linfomas cutáneos diferentes a MF y SS, también ha sido modificada de forma reciente y se fundamenta en los principios del compromiso tumoral, nodal y visceral (TNM), sin que para este grupo de tumores se definan estadios como para el caso de la MF (37). La clasificación en estadios para la MF y el SS y el sistema TNM para pacientes con linfomas cutáneos diferentes a MF se presentan en las Tablas 3 y 4. 
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 2. Sistema de estadificación TNMB para micosis fungoides y síndrome de Sézary
+					thead
+						tr
+							th(colspan="2") TNMB Estadio para micosis fungoide y síndrome Sézary
+					tbody
+						tr
+							td 
+								b Piel
+							td &nbsp;
+						tr
+							td T1
+							td Parches limitados, pápulas y/o placas que cubran &lt;10% de la superficie de la piel. Puede estratificarse en T1a (solo parche) versus T1b (placa ± parche).
+						tr
+							td T2
+							td Parches, papulas, o placas que cubran ≥10% de la superficie de la piel. Puede estrtificarse en T2a (solo parche) versus T2b (placa ± parche).
+						tr
+							td T3
+							td Uno o más tumores (≥1 -cm diametro)
+						tr
+							td T4
+							td Confluencia de eritema que cubra ≥80% del area de superficie corporal
+						tr
+							td 
+								b Ganglio
+							td &nbsp;
+						tr
+							td N0
+							td No ganglios linfáticos preiféricos clínicamente anormales; no requiere biopsia.
+						tr
+							td N1
+							td Ganglios linfáticos periféricos clínicamente anormales; histopatología Dutch grado 1 o NCI LN0-2                       N1a Clon negativo - N1b Clon positivo
+						tr
+							td N2
+							td Ganglios linfáticos periféricos clínicamente anormales; histopatología Dutch grado 2 o NCI LN3                                   N2a Clon negativo - N2b Clon positivo
+						tr
+							td N3
+							td Ganglios linfáticos periféricos clínicamente anormales; histopatología Dutch grado 3-4 o NCI LN4; clon negativo o positivo
+						tr
+							td Nx
+							td Ganglios linfáticos periféricos clínicamente anormales; no confirmacion histologica
+						tr
+							td 
+								b Visceral
+							td &nbsp;
+						tr
+							td M0
+							td No afectación de organo visceral
+						tr
+							td M1
+							td Afectación visceral (debe tener confirmación patológica y el organo afectado debe especificarse)
+						tr
+							td 
+								b Sangre
+							td &nbsp;
+						tr
+							td B0
+							td Ausencia significativa de compromiso sanguineo: ≤5% de linfocitos en sangre periférica son células atípicas (Sézary)  B0a Clon negativo - B0b Clon positivo
+						tr
+							td B1
+							td Carga tumoral sanguinea baja: >5% de linfocitos en sangre periferica son células atípicas (Sézary) pero no cumplen con los criterios de B2 - B1a Clon negativo - B1b Clon positivo
+						tr
+							td B2
+							td Carga tumoral sanguinea alta: ≥1000/μL células Sézary  con clon positivo
+						tr
+							td(colspan="2") SS es un estadio como T4 N2/3/x M0 B2.
+							
+							
+				//- Table
+				table.table.table-striped
+					caption Tabla 3. Clasificación en estadio de la micosis fungoide y el síndrome de Sézary
+					thead
+						tr
+							th Estadio
+							th T
+							th N
+							th M
+							th B
+							th 5 años DSS* (%)
+					tbody
+						tr
+							td IA
+							td 1
+							td 0
+							td 0
+							td 0.1
+							td 98
+						tr
+							td IB
+							td 2
+							td 0
+							td 0
+							td 0.1
+							td 89
+						tr
+							td IIA
+							td 1.2
+							td 1.2
+							td 0
+							td 0.1
+							td 89
+						tr
+							td IIB
+							td 3
+							td 0-2
+							td 0
+							td 0.1
+							td 56
+						tr
+							td IIIA
+							td 4
+							td 0-2
+							td 0
+							td 0
+							td 54
+						tr
+							td IIIB
+							td 4
+							td 0-2
+							td 0
+							td 1
+							td 48
+						tr
+							td IVA1
+							td 1-4
+							td 0-2
+							td 0
+							td 2
+							td 41
+						tr
+							td IVA2
+							td 1-4
+							td 3
+							td 0
+							td 0-2
+							td 23
+						tr
+							td IVB
+							td 1-4
+							td 0-3
+							td 1
+							td 0-2
+							td 18
+						tr
+							td(colspan="6") *DSS: Supervivencia específica para la enfermedad
+							
+							
+				//- Table
+				table.table.table-striped
+					caption Tabla 4. Sistema TNM para linfomas cutáneos diferentes a micosis fungoide y síndrome de Sézary
+					thead
+						tr
+							th(colspan="3") Propuesta del ISCL/EORTC sobre clasificación TNM del linfoma cutaneo diferente a MF/SS
+						tr
+							th(colspan="3") Clasificación
+					tbody
+						tr
+							td(rowspan="9") 
+								b T
+							td &nbsp;
+							td &nbsp;
+						tr
+							td(rowspan="3")  T1
+							td Afectación solitaria de la piel
+						tr
+							td T1a: Una lesión solitaria &lt;5cm diametro
+						tr
+							td T1b: Una lesión solitaria >5cm diametro
+						tr
+							td(rowspan="4")  T2
+							td Afectación regional de la piel: lesiones multiples limitadas a 1 región del cuerpo o regiones contiguas
+						tr
+							td T2a: Enfermedad que abarca un area circular  &lt;15cm de diametro
+						tr
+							td T2b: Enfermedad que abarca un area circular entre >15 y &lt;30cm de diametro
+						tr
+							td T2c: Enfermedad que abarca un area circular >30cm de diametro
+						tr
+							td T3
+							td Afectación generalizada de la piel
+						tr
+							td(rowspan="5") 
+								b N
+							td &nbsp;
+							td &nbsp;
+						tr
+							td N0
+							td No afectación clínica o patologíca de ganglio linfático
+						tr
+							td N1
+							td Afectación de 1 región de ganglios linfáticos perifericos que drena un area de afectación cutanea actual o anterior
+						tr
+							td N2
+							td Afectación de 2 o mas regiones de ganglios linfáticos perifericos o afectación de ninguna región de ganglios linfaticos perifericos que drena un area cutanea actual o anterior
+						tr
+							td N3
+							td Afectación de galglios linfaticos centrales
+						tr
+							td(rowspan="3") 
+								b M
+							td &nbsp;
+							td &nbsp;
+						tr
+							td M0
+							td No evidencia de enfermedad extracutanea no ganglionar
+						tr
+							td M1
+							td Enfermedad extracutanea no ganglionar presente
+							
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso80')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-5')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-5
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294387', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294389', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
