@@ -1,0 +1,183 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-6
+				
+				h3 1. Tratamiento del Linfoma Hodgkin
+				
+				p La estadificación y el tratamiento de los pacientes con Linfoma Hodgkin (LH) ha presentado grandes cambios en las últimas décadas. La introducción de métodos más sensibles para la estadificación y evaluación de la respuesta como la tomografía por emisión de positrones (PET-CT), la definición precisa de grupos de riesgo, la realización de múltiples ensayos clínicos comparando diferentes modalidades de tratamiento ya sea solas o en combinación y de forma mas reciente la introducción de nuevos medicamentos ha mejorado el pronóstico de los pacientes. Un estudio reciente que analizó los resultados de supervivencia de 35 680 pacientes incluidos en el registro SEER de los Estados Unidos, encontró que el HR para mortalidad de los pacientes diagnosticados en el 2006 fue de 0.6 (IC 95% 0.52 – 0.7), comparado con los diagnosticados en 1983. El tamaño del efecto fue mayor para los pacientes en estadio más temprano, siendo el HR de 0.62 y 0.4 para los pacientes en estadio I y II diagnosticados en 2006 comparados con los diagnosticados en 1983. El efecto se mantuvo en los pacientes en estadio III y IV aunque con menor magnitud pero conservando la significancia (1). En esa sección se presentan las estrategias de tratamiento para pacientes con LH definidas de acuerdo con los grupos de riesgo y el estadio. 
+				
+				h3 1.1. Definición de grupos de riesgo
+				
+				p La estadificación actual de los pacientes con LH se basa en el sistema de Lugano (2) como se presentó en el módulo correspondiente y se resume en la Tabla 1. Sin embargo, además de la definición en estadios, se ha reconocido que la presencia de características clínicas específicas permite clasificar a los pacientes en tres grupos: temprano favorable, temprano desfavorable y avanzado. Los factores de riesgo fueron reconocidos en los estudios tempranos que evaluaron las modalidades combinadas de tratamiento. El estudio H7, conducido por el EORTC incluyó pacientes en estadio I y II los cuales fueron estratificados en un grupo favorable y uno desfavorable, basados en la presencia de alguno de los siguientes factores de riesgo: la presencia de una gran masa mediastinal, definida como aquella con una relación en la masa y el diámetro mayor del tórax superior a 0.35; la edad mayor de 50 años; una velocidad de sedimentación globular mayor a 50 mm/h en ausencia de síntomas B o mayor a 30 mm/h en presencia de los mismos y el compromiso de cuatro o más áreas nodales. Los pacientes en estadio I y II sin factores de riesgo fueron asignados al grupo favorable y los que presentaban al menos un factor de riesgo al grupo desfavorable, identificando diferencias significativas en la supervivencia entre los grupos, a favor de una estrategia combinada de tratamiento y permitiendo demostrar que la estratificación en grupos de riesgo era factible y podría permitir plantear una estrategia adaptada al riesgo(3). El ensayo HD7conducido por el grupo alemán de linfoma Hodgkin (GHSG) el cual incluyó pacientes en estadio temprano, definió como factores de riesgo la presencia de una masa mediastinal con un diámetro mayor a un tercio del diámetro máximo del tórax, la presencia de enfermedad extranodal, el compromiso de tres o más áreas nodales y la elevación de la VSG mayor o igual a 50 mm/h para pacientes en estadio IA y IIA y mas de 30 mm/h para pacientes en estadio IB, clasificando los pacientes en un estadio temprano favorable a aquellos en estadio a aquellos en estadio IA, IB, IIA, IIB no bultoso sin factores de riesgo y como estadio intermedio o temprano desfavorable a aquellos en estadio IA, IB o IIA con factores de riesgo y a los pacientes en estadio IIB solo si los pacientes presentaban aumento de la VSG o compromiso de tres o más áreas nodales, pero excluyendo los pacientes con enfermedad bultosa mediastinal(4). 
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 1. Sistema de estadificación de Lugano
+					thead
+						tr
+							th Estadio
+							th Nodal
+							th Extranodal
+					tbody
+						tr
+							td I 
+							td Un ganglio o un grupo de ganglios adyacentes
+							td Una lesión extranodal única sin compromiso nodal 
+						tr
+							td II
+							td Dos o más grupos nodales del mismo lado del diafrágma 
+							td Estadio I o II por compromiso nodal con compromiso extranodal contiguo limitado 
+						tr
+							td III
+							td Ganglios a ambos lados del diafrágma; ganglios por encima del diafragma con compromiso esplénico 
+							td No aplicable 
+						tr
+							td IV
+							td Compromiso adicional extralinfático no continuo 
+							td No aplicable 
+							
+				p Los estudios posteriores comparando diferentes modalidades combinadas de tratamiento, han utilizado este mismo sistema de clasificación en grupos de riesgo y la discusión sobre la terapia se basa en estas definiciones. Un resumen de las características que definen los grupos de riesgo se presenta en la Tabla 2. 
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 2. Grupos de riesgo para Linfoma Hodgkin
+					thead
+						tr
+							th &nbsp;
+							th EORTC / LYSA
+							th GHSG
+					tbody
+						tr
+							td(rowspan='4') Factor de riesgo
+							td Masa mediastinal (relación M/T 0.35) 
+							td Masa mediastinal de al menos 1/3 del diámetro máximo del tórax (relación M/T 0.33) 
+						tr
+							td Edad > 50 años 
+							td Compromiso extranodal 
+						tr
+							td VSG > 50 sin síntomas B y > 30 si presentes 
+							td Compromiso de 3 o más áreas nodales 
+						tr
+							td > 4 áreas nodales 
+							td VSG > 50 mm en estadios IA y IIA y > 30 en estadio IB 
+						tr
+							td Estadio 
+							td &nbsp;
+							td &nbsp;
+						tr
+							td Favorable  
+							td I y II sin factores de riesgo 
+							td I y II sin factores de riesgo 
+						tr
+							td Desfavorable   
+							td I y II con un factor o más
+							td I y II con un factor o más y IIB con VSG elevada y tres o más áreas nodales, pero sin masa mediastinal o compromiso extranodal 
+							
+				h3 1.2. ¿Porqué adaptar la terapia al riesgo? Reduciendo la morbilidad y mortalidad tardías
+				
+				p Desde la descripción original del LH en 1832, cuando aún no se reconocía la naturaleza neoplásica de esta condición, el tratamiento ha sufrido grandes cambios, pasando de una enfermedad invariablemente mortal en el término de 3 a 4 años, a la curación de más del 80% de los pacientes que se logra con las estrategias actuales de tratamiento. Es posible afirmar que el tratamiento del LH es uno de los más grandes logros de la oncología médica (5). El primer tratamiento con posibilidades curativas en los pacientes con LH en estadios tempranos, y que fue considerado el estándar durante varios años, fue la radioterapia de campo extendido (EFRT). La introducción posterior de los esquemas de quimioterapia combinada cambio el paradigma del tratamiento hacia una modalidad combinada en los pacientes en estadios tempranos, por el hallazgo de una menor supervivencia libre de recaída cuando la radioterapia era omitida. Adicionalmente, el seguimiento a largo plazo de los pacientes sobrevivientes luego de EFRT, identificó que las principales causas de muerte de esta población eran consecuencia del tratamiento, en particular el desarrollo de segundas neoplasias y toxicidad vascular o pulmonar, como consecuencia de la inclusión de estos órganos en los campos de tratamiento. Con la mejoría en la expectativa de vida y las posibilidades reales de curación de estos pacientes, la minimización de la toxicidad tardía pasó a ser un objetivo principal y en la actualidad las decisiones respecto al plan de tratamiento buscan minimizar dicha toxicidad sin comprometer la eficacia.
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Morbilidad cardiovascular tardía
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p Un estudio que evaluó la incidencia de enfermedad cardiovascular en 1474 sobrevivientes de LH, que tenían menos de 41 años al momento de recibir el tratamiento encontró, luego de una mediana de seguimiento de más de 18 años, encontró que el riesgo de infarto agudo de miocardio y falla cardíaca congestiva fue significativamente mayor en los pacientes tratados con respecto a la población general, con un exceso de 35.7 casos por 100 000 personas/año y de 25.6 casos por 100 000 personas año respectivamente. El tratamiento con radioterapia mediastinal se asoció con un riesgo de 2 a 7 veces mayor con respecto a la población general de infarto de miocardio, angina inestable, falla cardíaca y alteraciones valvulares. El tratamiento concomitante con antraciclinas incremento aún más el riesgo de falla cardíaca y alteraciones valvulares con un HR de 2.81 y 2.10 respectivamente. De los 457 pacientes de esta cohorte que murieron, 137 murieron por segundas neoplasias, 135 por LH y 73 por causas cardiovasculares incluyendo 22 episodios de infarto de miocardio. En general el incremento del riesgo de enfermedad cardiovascular fue de 3 a 5 veces mayor en la población de pacientes con LH con respecto a la población general (6). 
+								p Un segundo estudio que evaluó el riesgo de enfermedad cardiovascular incluyó 2604 pacientes de una cohorte de base hospitalaria y que habían recibido tratamiento antes de los 51 años y sobrevivido por más de cinco años desde el momento del diagnóstico. La incidencia de falla cardíaca y enfermedad coronaria fue comparada con población de la misma edad y sexo. La mediana de edad al momento del diagnóstico de LH fue de 27.3 años. Más del 80% de los pacientes incluidos habia recibido tratamiento con radioterapia mediastinal. Con una mediana de seguimiento de 20.3, se identificaron 1713 eventos cardiovasculares en 797 pacientes, siendo la enfermedad coronaria el tipo de evento más frecuente. 
+								p Luego de 40 años del LH, la incidencia acumulativa de cualquier enfermedad cardiovascular fue de 49.5%, con una incidencia en los pacientes tratados con radioterapia mediastinal de 54.6% contra 24.7% de los que no la recibieron. En el seguimiento a largo plazo, la falla cardiaca fue el evento más frecuente con una incidencia acumulativa de 8.1% como primer evento cardiovascular detectable. Comparados con la población general, los sobrevivientes de LH tuvieron un incremento estandarizado de 3.2 veces de desarrollar enfermedad coronaria y de 6.8 veces de desarrollar falla cardíaca comparados con la población general con un exceso de 70 y 58 casos por 100 000 personas-año respectivamente, confirmado los resultados de los estudios anteriores respecto a los efectos del tratamiento. Este estudio no identificó efectos multiplicativos entre radioterapia mediastinal y administración de un régimen que contenga antraciclinas respecto al desarrollo de enfermedad cardiovascular (7).
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Segundas neoplasias 
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Además de los efectos cardiovasculares tardíos del tratamiento, el desarrollo de segundas neoplasias es una causa de muerte y morbilidad en los pacientes que sobreviven al LH. Un estudio realizado en Holanda que incluyó 3905 pacientes que sobrevivieron mas de cinco años luego del diagnóstico de LH encontró que, comparado con la población general, la razón de incidencia estandarizada era de 4.6 (IC 95% 4.3 a 4.9). El riesgo de desarrollar un tumor sólido fue mayor en la cohorte de LH comparado con la población general 35 años o más después de haber recibido el tratamiento. La incidencia acumulativa de un segundo cáncer en la cohorte de estudio fue de 48.5% (IC 95% 45.4 a 51.5) a 40 años. Un hallazgo importante de este estudio es que el riesgo no parece haber disminuido a lo largo del tiempo, aunque la evaluación de los efectos de las modificaciones más recientes a los campos de radioterapia y el número de ciclos de quimioterapia, aun no puede ser claramente evaluado (8). Algunas asociaciones identificadas por este estudio fueron que los pacientes que recibieron radioterapia supradiafragmática sin incluir la axila tuvieron un riesgo menor de desarrollar un segundo cáncer que los pacientes que recibieron radioterapia en manto, atribuido al menor riesgo de desarrollar cáncer de mama cuando la axila no estaba incluida en el campo de radiación. El tabaquismo tuvo un efecto multiplicador del riesgo de cáncer de pulmón, siendo el grupo de mayor riesgo o los pacientes fumadores o exfumadores que recibieron radioterapia supradiafragmática (HR 14.38 IC 95% 6.99 a 29.58). El riesgo de cáncer de estómago, cáncer colo-rectal y páncreas fue mayor en los pacientes que recibieron radioterapia infradiafragmática y en el grupo de pacientes con mayores dosis acumuladas de procarbazina. Otro estudio que evaluó la incidencia de segundas neoplasias en una cohorte de 871 pacientes atendidos en un solo centro encontró un exceso absoluto de riesgo de 80.8 para todos los tipos de cáncer en la cohorte de pacientes con LH. Los tumores más frecuentes fueron el cáncer de pulmón (17.5%), mama (15.6%), linfoma no Hodgkin y leucemias. El tumor que se presentó de manera más frecuente en el campo de radiación fue el cáncer de mama, seguido por el cáncer colo-rectal y el cáncer de pulmón. 
+								p El incremento del riesgo de segundas neoplasias, el cual se sostiene en el tiempo, hace que el seguimiento de estos pacientes respecto a la tamización y promoción de un estilo de vida saludable sea fundamental. Adicionalmente, algunos de los factores que incrementan el desarrollo de segundas neoplasias, también incrementan el riesgo de enfermedad cardiovascular. Diferentes sociedades han realizado recomendaciones respecto al seguimiento de los pacientes que sobreviven al tratamiento del LH. Algunos puntos para resaltar son(9):
+								
+								ul
+									li El riesgo de segundas neoplasias se incrementa luego de 5 años de haber recibido el tratamiento y se mantiene elevado aún después de 30 años del primer ciclo. 
+
+									li Las recomendaciones para tamización de los tipos de tumor más frecuentes son: 
+									
+								p 
+									b Cáncer de mama: 
+								
+								ul
+									li Mamografía anual y tamización con resonancia nuclear magnética de la mama iniciando a los 8 años de haber iniciado el tratamiento o al cumplir 40 años, lo que ocurra primero, en las mujeres con historia de radioterapia en el tórax entre los 10 y los 30 años. 
+									li Otras sociedades han recomendado iniciar la tamización con mamografía o con RNM de la mama a los 8 años de iniciado el tratamiento o a los 25 años, lo primero que ocurra de último. 
+									
+								p 
+									b Cáncer de colon y recto: 
+								
+								ul
+									li Colonoscopia cada 10 años iniciando a los 50 años o a los 40 años para los supervivientes que tengan riesgo por su historial de tratamiento 
+									li Otras sociedades recomiendan la colonoscopia cada 5 años, comenzando 10 años luego de iniciado el tratamiento o a los 35 años para pacientes que hayan recibido radioterapia con mas de 30 Gy en abdomen o pelvis 
+									
+								p 
+									b Cáncer de tiroides 
+								
+								ul
+									li Examen anual 
+									
+								p 
+									b Cáncer de piel 
+								
+								ul
+									li Autoexamen mensual en pacientes expuestos a radioterapia 
+									li Consejería sobre exposición solar y uso de bloqueadores. 
+									
+								p Las recomendaciones con respecto a la enfermedad cardiovascular son: 
+								
+								ul
+									li Prueba de esfuerzo y ecocardiograma con intervalos de 10 años en los pacientes que hayan recibido radioterapia en el tórax. 
+									li Ultrasonido carotideo con intervalo de 10 años en pacientes que hayan recibido radioterapia cervical. 
+									li Factores de riesgo cardiovascular 
+										ul
+											li Control de la TA, perfil lipidico y otros factores al menos una vez al año 
+											li Tratamiento agresivo de los factores de riesgo cardiovascular. 
+
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso10')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-6')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-6
+	
+	//- pagination
+	+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294386', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
