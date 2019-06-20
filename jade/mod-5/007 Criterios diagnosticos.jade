@@ -1,0 +1,69 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-2
+				
+				h3 7. Criterios diagnósticos
+				
+				p Los criterios diagnósticos del grupo internacional de trabajo en mieloma enfatizan en la importancia del daño orgánico para hacer el diagnóstico de MM. 
+
+				p Se requiere llenar los siguientes criterios: 
+				
+				ul
+					li Infiltración de 10% o más por plasmocitos en la MO o en un plasmocitoma de tejido blando que sean clonales determinado esto por restricción de cadenas livianas en citometría de flujo, inmunohistoquímica o inmunofluorescencia. El porcentaje debe estar dado por la biopsia de MO cuando sea posible. Si hay disparidad entre métodos se debe usar el valor más alto. Un 4% tendrán menos del 10% dado que el compromiso puede ser focal. Puede ser necesario repetir la biopsia en algunos pacientes.
+					
+				ul
+					li Asociado a presencia de daño orgánico (criterios CRAB)
+					
+				ol
+					li Anemia menor de 10g/dL o mayor a 2 g/dL por debajo del valor normal. 
+					li Hipercalcemia mayor de 11 mg/dL descartando otras causas de hipercalcemia.
+					li Insuficiencia renal con un aclaramiento de creatinina menor de 40 mL/min o creatinina sérica mayor de 2. Se prefiere el aclaramiento de creatinina.
+					li Lesiones óseas. Una o más lesiones osteolíticas mayor o igual a 5mm en tamaño en radiografía, IRM, TAC o PET CT. No son criterios aumento de la captación de la FDG, osteoporosis, fractura por compresión vertebral si no hay lesiones líticas. Cuando hay duda se requiere biopsia del hueso comprometido.
+					
+				ul
+					li Presencia de marcador de progresión inevitable 
+					
+				ol
+					li Infiltración por plasmocitos tumorales mayor o igual a 60% en MO
+					li Relación de cadena comprometida sobre no comprometida mayor de 100 si se detecta que la comprometida es por lo menos de 100 mg/L
+					li IRM con una o más lesiones focales comprometiendo hueso o médula ósea.
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso70')
+				
+	//- Material modulo
+	+material-modulo('material-mod-2')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-2
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=291965', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=291967', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

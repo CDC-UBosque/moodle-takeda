@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-3
+				
+				h3 4. Inhibidores del proteosoma
+				
+				p La ordenada degradación de las proteínas celulares eucariotas esta medida por la vía del ubiquitina proteosoma. El proteosoma 26S consiste de un centro de un complejo catalizador 20S y un complejo regulador 19S. La inhibición de este sistema lleva a la apoptosis celular siendo las células malignas, transformadas y proliferantes las más susceptibles. Varios compuestos derivados del ácido borónico incluyendo el Bortezomib fueron diseñados para inhibir la vía del proteosoma de una manera específica. El primer estudio con Bortezomib en neoplasias hematológicas avanzadas lo desarrolló el Dr. Orlowski en la universidad de Carolina del Norte. En estudio fase I demostró alta actividad, lo que fue confirmado además en estudios preclínicos en Dana Farber de Boston.  Aproximadamente un tercio de los pacientes con mieloma múltiple refractario y recaído respondieron al Bortezomib. Estos resultados llevaron a la aprobación del medicamento por la FDA en mayo de 2003. En un ensayo subsecuente, tiempo a la progresión fue superior con Bortezomib comparado con dexametasona sola en pacientes con MM refractario o recaído. 
+
+				p Varios estudios en la actualidad documentan el beneficio de Bortezomib combinado con quimioterapia en pacientes elegibles y no elegibles a trasplante con beneficios tanto en terapia de inducción como de mantenimiento inclusive superando algunas alteraciones citogenéticas de alto riesgo. En la actualidad se recomienda el uso de Bortezomib en la mayoría de escenarios clínicos en primera línea. 
+
+				p Es importante mencionar el carfilzomib, un inhibidor del proteosoma de segunda generación que se une selectivamente al sitio similar a la quimiotripsina del centro proteolítico y está actualmente evaluándose en diferentes dosis y diferentes regímenes tanto en recaída como en nuevo diagnóstico. Los principales efectos adversos que se han documentado son la posibilidad de desarrollar falla cardíaca pero menor probabilidad de desarrollar neuropatía. 
+
+				p Además del carfilzomib se ha desarrollado el Ixazomib que tiene aprobación también por las agencias regulatorias y que tiene la ventaja de ser una terapia oral con alta actividad en MMRR con riesgo citogenético adverso.
+				
+				h3 5. Anticuerpos monoclonales
+				
+				p En la última década se han desarrollado nuevos medicamentos como los anticuerpos monoclonales incluyendo Daratumumab y Elotuzumab que han demostrado ser medicamentos efectivos y seguros en el manejo del MM RR y ahora estan siendo investigados en terapia de primera línea.  De hecho, Daratumumab tiene aprobación para uso en primera línea por la FDA para pacientes no elegibles a trasplante.
+				
+				h3 6. Otras terapias
+				
+				p Terapias como los inhibidores de histona deacetilasa (HDAC), inhibidores de BCL2 están siendo investigados actualmente.  Las terapias adicionales incluyen además la radioterapia, los antibióticos, los bisfosfonatos, el Denosumab y la cirugía con indicaciones y adelantos que se han dilucidado en la última década. 
+				
+				p A pesar de todo lo anterior, en el MM las recaídas son inevitables en la mayoría de los pacientes haciendo que esta enfermedad permanezca sustancialmente incurable.  El arsenal terapéutico como pudimos ver en este pequeño recuento histórico es amplio y continúa ampliándose, sin embargo, cada medicamento tiene un perfil de eventos adversos propios considerándose que la mayoría de estos benefician solo a una minoría de pacientes.  La habilidad de nosotros los clínicos para identificar los subgrupos de pacientes que van a tener el mayor beneficio con el mejor perfil de toxicidad es un importante requerimiento para mejorar las tasas de respuesta, seguridad y supervivencia.
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso20')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-3')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-3
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294120', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294122', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

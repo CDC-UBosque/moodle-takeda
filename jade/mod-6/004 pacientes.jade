@@ -1,0 +1,149 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-3-1
+				
+				h3 2. Pacientes elegibles a trasplante
+				
+				p Los pacientes elegibles a trasplante reciben una inducción con una triple terapia por tres a cuatro meses antes de la colecta de progenitores hematopoyéticos con el fin de reducir la cantidad de células tumorales en la MO y la sangre periférica, disminuir los síntomas y mitigar el daño orgánico. La colecta se realiza después de este momento sin importar si va a proceder con el trasplante inmediato o diferido. En los pacientes en los que se difiere el trasplante se deben completar 8 a 12 ciclos seguidos de una terapia de mantenimiento. 
+				
+				p La triple terapia en los pacientes elegibles a trasplante consiste constantemente en un inhibidor del proteosoma, esencialmente Bortezomib combinado con un glucocorticoide y el tercer agente puede escogerse entre Talidomida, Lenalidomida, Ciclofosfamida, Doxorrubicina, Doxorrubicina liposomal. 
+
+				p Varios documentos dan cuenta de la efectividad de Bortezomib en la translocación (4;14) superándola, convirtiendo pacientes de alto riesgo en pacientes de riesgo intermedio o estándar. En la mayoría de pacientes usaremos este medicamento en la terapia de inducción lo cual es ventajoso en sitios donde no se cuenta con la posibilidad de realizar un adecuado estudio citogenético. 
+
+				p Los principales esquemas de inducción son los que se muestran a continuación. Nuestro esquema estándar es el régimen VTD.
+				
+				table.table.table-striped
+					caption Tabla 1. Esquemas de inducción de remisión en MM elegibles a trasplante en primera línea.
+					//-thead
+					//-	tr
+					//-		th Spicy jalapeno
+					tbody
+						tr
+							td Bortezomib/Ciclofosfamida/
+								br/ Dexametasona VCD/CyBorD
+							td Ciclofosfamida 300 mg/m2 oral días 1,8,15,22; Bortezomib 1,3 mg/m2 (IV o SC) días 1,8,15,22; Dexametasona 40 mg IV u oral días 1,8,15,22 cada 4 semanas
+						tr
+							td Bortezomib/Talidomida/
+								br/ Dexametasona VTD
+							td Bortezomib 1,3 mg SC días 1,8,15,22;Talidomida 100 por los primeros 14 días leugo 200 mg oral días 1 al 21, dexametasona 20 mg el día de bortezomib y el día despues (o 40 mg 1,8,15,22) repetido cada 4 semanas por 4 ciclos como pretrasplante.
+						tr
+							td Bortezomib/Doxorrubicina/
+								br/ Dexametasona PAD 
+							td Bortezomib 1,3 mg/m2 dìas 1,4,8,11;Doxorrubicina 9 mg/m2 IV días 1 al 4, Dexametasona 20 mg día 1 al 4, 9 al 12 y 17 al 20 (240 mg por ciclo, repetido cada 28 días).
+						tr
+							td Bortezomib/Lenalidomida/
+								br/ Dexametasona VRd
+							td Bortezomib 1,3 mg SC o IV día 1,8,15; Lenalidomida 25 mg oral 1 al 14; dexametasona 20 mg el día de bortezomib y el día posterior (o 40 mg días 1,8,15,22) repetido cada 3 semanas. 
+							
+				p Después de la terapia de inducción se debe escoger una de tres estrategias.
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Trasplante temprano, doble o en tándem inmediatamente después de la colecta. La estrategia de trasplante en tándem usualmente se realiza con una diferencia de pocos meses 4 a 6. 
+						div.tab-pane.fade#2
+							p Trasplante diferido. Se continua con la terapia de inducción reservando el trasplante para la recaída.
+						div.tab-pane.fade#3
+							p Trasplante alogénico. 
+							
+				p La terapia más recomendada en la actualidad es el trasplante temprano. Ya hemos comentado que el trasplante ha sido un hito en la mejoría de la supervivencia libre de progresión y supervivencia global. Algunos estudios han mostrado que la estrategia de diferir el trasplante no impacta en la supervivencia, por esto, esta modalidad de tratamiento también es aceptada. No obstante de lo anterior hay que tener en cuenta que en el momento de la recaída un paciente determinado puede no ser ya elegible a trasplante. Nosotros preferimos el trasplante inmediato en los pacientes que son elegibles.
+
+				p El trasplante en tándem no es una estrategia estándar dado que los estudios no han mostrado beneficio en los pacientes de riesgo estándar, sin embargo, puede ser considerado en algunos escenarios clínicos como enfermedad de alto riesgo especialmente pacientes con delección del 17p dado que estos pacientes tienen desenlaces más adversos que los de riesgo estándar, pero hay que tener en cuenta que los estudios que soportan esta estrategia son de baja calidad. 
+
+				p El trasplante alogénico puede brindar una alternativa curativa, pero persiste como una estrategia en investigación, es decir, los pacientes candidatos deberían ser incluidos en un ensayo clínico dado que se ha demostrado una alta mortalidad temprana y altas tasas de morbilidad. Los pacientes incluidos en los ensayos clínicos deberían ser pacientes jóvenes, quimiosensibles con enfermedad de muy alto riesgo. 
+
+				p Virtualmente todos los pacientes llevados a trasplante autólogo recaerán. Por lo anterior se ha establecido que una de las estrategias para eliminar la enfermedad mínima residual es el mantenimiento post trasplante. Tres agentes han sido estudiados; Lenalidomida, Bortezomib e Ixazomib. Basados en la prolongación de la supervivencia libre de progresión y supervivencia global en la mayoría de los estudios, se recomienda el mantenimiento como terapia estándar. Para pacientes de riesgo estándar se sugiere dos años de mantenimiento con lenalidomida 10 mg día con el riesgo de segundas malignidades. El Ixazomib parece tener menor beneficio que la lenalidomida en este escenario. Se reserva para pacientes que no tengan acceso a lenalidomida o no la toleren. 
+				
+				p Para los pacientes de riesgo alto el Bortezomib se asocia con mejoría en supervivencia libre de progresión y supervivencia global por lo que se recomienda fuertemente en este escenario reservando Ixazomib para los pacientes que no toleran el Bortezomib. La duración de la terapia no está bien establecida, pero se sugiere por lo menos dos años.
+				
+				h3 3. Pacientes no elegibles a trasplante 
+				
+				p Los pacientes no elegibles a trasplante reciben 8 a 12 ciclos de terapia inicial con una terapia triple seguido de mantenimiento hasta progresión o toxicidad. Los pacientes que son frágiles y no son buenos candidatos a triple terapia pueden tener tratamiento con un esquema libre de quimioterapia como lenalidomida combinado con dosis bajas de dexametasona. Se incluyen dentro de los esquemas utilizados el uso de tripletas como el protocolo VISTA usando Bortezomib y prednisona combinado con melfalán, el esquema VCD de pacientes no elegibles a trasplante combinando Bortezomib y dexametasona con ciclofosfamida y el esquema VRd con lenalidomida.
+				
+				table.table.table-striped
+					caption Tabla 2. Esquemas de inducción de remisión en MM no elegibles a trasplante en primera línea.
+					//-thead
+					//-	tr
+					//-		th Spicy jalapeno
+					tbody
+						tr
+							td Bortezomib/Melfalán/
+								br/ Prednisona   VISTA 
+							td Bortezomib 1,3 mg/m2 SC días 1,8,15,22; Melfalán 9 mg /m2 oral días 1 al 4; Prednisona 60 mg/m2 oral día 1 al 4 repetido cada 35 días.
+						tr
+							td Melfalán/Prednisona/Talidomida
+							td Melfalan 0.25 mg/Kg oral días 1 al 4 (uso de 0.20 mg/Kg día oral en pacientes sobre los 75 años);Prednisona 2 mg/Kg oral días 1 al 4, Talidomida 100-200 mg oral días 1 añ 28 (solo 100 mg si el paciente es mayor de 75 años); repetir cada 6 semanas. 
+						tr
+							td Lenalidomida/
+								br/ Dexametasona Vd
+							td Lenalidomida 25 mg oral 1 al 21; dexametasona 40 mg días 1,8,15,22) repetido cada 3 semanas, repetido cada 28 días. 
+							
+				p La FDA de los estados unidos ha dado aprobación para el uso de Daratumumab en primera línea en los pacientes no elegibles a trasplante. Lo anterior derivado del estudio ALCYIONE que es un estudio fase 3 donde se asignaron 706 pacientes de nuevo diagnóstico no elegibles a trasplante a recibir Bortezomib, melfalán y prednisona como lo hace el estudio VISTA solo y en el otro brazo lo mismo combinado con Daratumumab resultando en este último grupo en mejores respuestas alcanzando 4 veces más frecuentemente la EMR, menor riesgo de progresión o muerte. Casi un tercio de los pacientes tuvieron reacciones infusionales y más infecciones grado 3 y 4. En Colombia no existe aún aprobación para este enfoque de tratamiento. 
+
+				p La terapia de mantenimiento se sugiere en la mayoría de pacientes, aunque esto es motivo de controversia. El tipo de mantenimiento depende del riesgo, las comorbilidades y el riesgo de segundas neoplasias. 
+
+				p En los pacientes de riesgo alto que han finalizado la terapia de inducción por 8 a 12 ciclos de terapia triple se sugiere mantenimiento con Bortezomib hasta la progresión. 
+				
+				p En los pacientes de riesgo estándar después de que han finalizado la inducción de igual forma por 8 a 12 ciclos de triple terapia se sugiere el uso de lenalidomida hasta la progresión si tienen bajo riesgo de segundas neoplasias. 
+
+				p Para los pacientes frágiles que fueron a tratamiento con lenalidomida y bajas dosis de dexametasona (libre de quimioterapia) deben continuar con el mismo esquema hasta toxicidad o progresión.
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod3/figura06.png' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod3/figura06.png' alt='Figura 1')
+					div.span4
+						div.img-footer
+							span Gráfico 2. Esquema de tratamiento de primera línea
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso40')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-3')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-3
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294122', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294124', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

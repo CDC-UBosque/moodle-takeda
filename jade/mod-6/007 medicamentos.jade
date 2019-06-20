@@ -1,0 +1,251 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-3-1
+				
+				h3 Medicamentos usados en el rescate del MM 
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span 1. Inhibidores del proteosoma 
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p Como hemos dicho con anterioridad, virtualmente todos los pacientes con MM de reciente diagnóstico reciben Bortezomib y/o lenalidomida en la inducción. En este sentido tenemos que definir si el paciente es primario refractario, recaído y refractario a este medicamento o recaído. 
+								
+								p Bortezomib es una buena opción para el rescate (datos de estudio SUMMIT, APEX y DOXIL-MMY-3001) si este medicamento no se ha usado antes o hubo una buena respuesta inicial al tratamiento (no fue refractario primario ni refractario y recaído) sin embargo, el estudio ENDEAVOR da cuenta de casi duplicación en la supervivencia libre de progresión de Carfilzomib sobre Bortezomib cuando se combinan en terapia doble con dexametasona, además tiene beneficio en supervivencia global. Por lo anterior se recomienda Carfilzomib sobre Bortezomib en la terapia de rescate. La terapia combinada con Daratumumab se describirá más adelante.  Hay que tener en cuenta que en este estudio no fueron incluidos los pacientes refractarios primarios a Bortezomib y que la terapia con Carfilzomib resultó en mayor incidencia de falla cardíaca, hipertensión y falla renal aguda pero menor incidencia de neuropatía. 
+
+								p Otra opción de tratamiento es la combinación de Carfilzomib con Lenalidomida y dexametasona. El estudio ASPIRE demostró mejoría en la tasa de respuesta global, supervivencia libre de progresión, supervivencia global, mejoría de la calidad de vida. Este estudio incluyó pacientes tratados previamente con Bortezomib y lenalidomida pero que no hayan sido refractarios primarios. No hubo una descontinuación significativa de la terapia a pesar de las reacciones adversas entre las que se incluyeron infecciones del tracto respiratorio e hipertensión. 
+
+								p Ixazomib es otra alternativa terapéutica en MM recaído que además tiene la ventaja de ser oral. La mayor toxicidad de este medicamento es la diarrea, estreñimiento, náuseas, emesis, trombocitopenia, neuropatía periférica, edema y dolor dorsal. El estudio más importante quizás es el Tourmaline-MM1 donde 722 adultos con MMRR fueron aleatorizados a recibir Lenalidomida y dexametasona versus lo mismo combinado con Ixazomib. Los pacientes incluidos habían recibido una a tres terapias previas y nuevamente no debían ser refractarios a Bortezomib o Lenalidomida. Los ciclos fueron administrados cada 28 días, el Ixazomib 4 mg en los días 1, 8, 15 y 22.  Ixazomib mostró mejoría en la tasa de respuesta global y respuesta completa, supervivencia libre de progresión y duración de la respuesta. Lo más llamativo de este estudio fue el beneficio que se encontró en los pacientes de riesgo alto y estándar lo cual no ha sido demostrado con los otros inhibidores del proteosoma. Los datos de supervivencia global aun no son claros. Deben realizarse ajustes por daño hepático o renal. Como con todos los inhibidores del proteosoma los pacientes deben recibir terapia antiviral, Aciclovir 400 mg cada 12 horas o valaciclovir 500 mg una vez al día.
+								
+								//- Table
+								table.table.table-striped
+									caption Tabla 5. Inhibidores del proteosoma utilizados en terapia de rescate en MM.
+									thead
+										tr
+											th Medicamento
+											th Vía
+											th Indicación EEUU 
+											th Indicación USA  
+											th Toxicidad
+									tbody
+										tr
+											td Bortezomib
+											td IV, SC
+											td Monoterapia
+											td MM
+											td Neurotoxicidad
+										tr
+											td &nbsp;
+											td &nbsp;
+											td Con Dexa
+											td &nbsp;
+											td &nbsp;
+										tr
+											td &nbsp;
+											td &nbsp;
+											td Con Poma
+											td &nbsp;
+											td &nbsp;
+										tr
+											td Carfilzomib
+											td IV
+											td Con Dexa
+											td Monoterapia
+											td Cardiotoxicidad
+										tr
+											td &nbsp;
+											td &nbsp;
+											td Con Lena+Dexa
+											td Con Dexa (1-3)
+											td &nbsp;
+										tr
+											td &nbsp;
+											td &nbsp;
+											td &nbsp;
+											td Con Lena+Dexa (1-3)
+											td &nbsp;
+										tr
+											td Ixazomib
+											td Oral
+											td Con Lena+Dexa
+											td Con Lena+Dexa
+											td Mielosupresión
+									
+								//- Table
+								table.table.table-striped
+									caption Tabla 6. Esquemas de rescate que incluyen Inhibidores del proteosoma
+									tbody
+										tr
+											td Bortezomib/Dexametasona y combinaciones 
+											td Bortezomib 1,3 mg/m2 SC o IV días 1,4,8 y 11; dexametasona 1, 2, 4, 5, 8, 9, 11, and 12.
+												br/ Bortezomib 1,3 mg/m2 SC o IV días 1, 8 y 15, lenalidomida 25 mg 1 al 14, adultos frágiles dosis de 15 mg, dexametasona 40 mg días 1, 8 y 15 en pacientes frágiles 20 mg.
+										tr
+											td Carfilzomib/Dexametasona
+											td Carfizomib 20 mg/m2 días 1 y 2 del ciclo 1  seguido de 56 mg días de ahí en adelante. 56 mg /m2 en infusión de 30 minutos en días 1,2,8,9,15,16; dexametasona 20 mg  en días  1,2,8,9,15,16, 22, 23 de un ciclo de 28 días. 
+										tr
+											td Carfilzomib/Lenanalidomida Dexametasona 
+											td Carfilzomib 20 mg/m2 los día 1 y 2 del ciclo 1 y 27 mg/m2 de ahí en adelante. Se administra los días 1,2,8,9,15,16, ciclos 1 al 12 y los días 1, 2,15 y 16 de los ciclos 13 sal 18 despues de lo cual se descontinua; lenalidomida 25 mg días 1 al 21, dexametasona 1, 8, 15 y 22
+										tr
+											td Ixazomib/Lenalidomida/
+												br/ Dexametasona TOURMALINE MM1 
+											td Ixazomib 4 mg oral días 1, 8 y 15, Lenalidomida 25 mg oral días 1 al 21, adultos frágiles 15 mg,   40 mg oral o IV en nuestro medio días 1, 8, 15 y 22
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span 2. Inmunomoduladores
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Son tres los Inmunomoduladores disponibles para el tratamiento de rescate del MM. Se ha demostrado mayor efectividad de Lenalidomida y Pomalidomida sobre talidomida por lo que se recomienda su uso sobre la primera. 
+								
+								p La lenalidomida ha demostrado actividad sola o en combinación con dexametasona. Actualmente la combinación con dexametasona es el pilar del tratamiento de varios esquemas de rescate. El esquema más frecuentemente usado en el pasado cuando no se tenía opción de combinarlo con otros agentes disponibles en la actualidad era la combinación de Lenalidomida con altas dosis de Dexametasona con datos derivados de dos estudios fase 3 (MM-009 y MM-010). No obstante lo anterior, la combinación con dosis bajas de dexametasona demostró tener mejor supervivencia global y menor toxicidad. Hay que tener en cuenta que este estudio fue conducido en pacientes con MM de reciente diagnóstico, pero se recomienda que en el rescate se usen dosis bajas sobre las dosis altas de esteroides. La toxicidad más frecuente es la hematológica con neutropenia hasta en un 40%. Hay preocupación sobre la posibilidad de desarrollar segundas neoplasias que está alrededor de 3.62 eventos por 100 pacientes año. La lenalidomida se excreta vía renal por lo cual debe usarse con precaución en el escenario de falla renal dado el riesgo de Mielosupresión. 
+
+								p La Pomalidomida con dosis bajas de dexametasona ha mostrado efectividad en el escenario de MMRR.  La tasa de respuesta es de aproximadamente 60%, 30% de los pacientes fueron refractarios a la lenalidomida en el estudio y 25% doble refractarios considerando refractariedad también al Bortezomib. La combinación con ciclofosfamida puede incrementar la tasa de respuesta. En un estudio pequeño fase 2, la combinación con ciclofosfamida resulto en mejor respuesta y tendencia a la mejoría en supervivencia libre de progresión. Los beneficios en este esquema de tratamiento se consideran marginales por lo que su uso debe verse con precaución dado el costo del medicamento. La trombo-profilaxis se ofreció a los pacientes, pero eventos severos ocurrieron en un 4%. Otra opción de tratamiento es la combinación con Daramumumab lo cual se mostrará más adelante.
+								
+								//- Table
+								table.table.table-striped
+									caption Tabla 7. Esquemas de rescate recomendados que incluyen Inmunomoduladores. 
+									tbody
+										tr
+											td Lenalidomida/Dexametasona  
+											td Lenalidomida 25 mg oral días 1 al 21; dexametasona 40 mg oral 40 mg días 1, 8, 15, 22 en un ciclo de 28 días. Considerar ajuste en mayores de 75 años frágiles a 15 mg de lenalidomida y 20 mg de dexametasona.
+										tr
+											td Pomalidomida/Dexametasona 
+											td Pomalidomida 4 mg día 1 al 21; dexametasona 40 mg 1,8,15 y 22. 
+										tr
+											td Pomalidomida/ciclofosfamida/Dexametasona 
+											td Pomalidomida 4 mg día 1 al 21; ciclofosfamida  400 mg oral días 1,8 y 15; dexametasona 40 mg 1,8,15 y 22.
+											
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+								span 3. Anticuerpos monoclonales
+						div#collapse3.accordion-body.collapse
+							div.accordion-inner
+								p El Daratumumab es un anticuerpo monoclonal dirigido contra el CD38 de los plasmocitos tumorales. Muchos autores recomiendan su uso en la primera recaída. 
+								
+								p Se recomienda la combinación con lenalidomida y dexametasona en aquellos pacientes que no son refractarios a la lenalidomida en el momento de la primera recaída. Esto incluye pacientes quienes están sin terapia y los que recaen con pequeñas dosis de lenalidomida como agente único, esencialmente 10 mg o los pacientes que tienen Bortezomib en mantenimiento. 
+								
+								p Se prefiere la combinación con Bortezomib para los pacientes que son refractarios a la lenalidomida en el momento de la primera recaída. Una alternativa es la combinación con Pomalidomida que se prefiere cuando hay doble refractariedad. 
+								
+								p Los datos de Daratumumab como terapia de rescate provienen de los estudios POLLUX y CASTOR donde se ha demostrado mejores tasas de respuesta completa, respuesta parcial muy buena o mejor y respuesta completa o mejor. En el grupo de combinación con lenalidomida las respuestas se profundizan con el tiempo. Se ha demostrado mejor supervivencia libre de progresión, los datos de supervivencia global aún no están maduros. Las reacciones infusionales son frecuentes hasta en un 45% y se reportan en su gran mayoría durante la primera infusión. 
+
+								p Se ha usado también en monoterapia en pacientes multitratados, datos provenientes del estudio SIRIUS donde se trataron pacientes con una mediana de 5 líneas, la tasa de respuesta global fue de 29% con una mediana de tiempo a la respuesta de un mes. La supervivencia libre de progresión fue de tan solo 3.7 meses y la supervivencia global de 17.5 meses. 
+
+								p También una opción es la combinación con Pomalidomida donde la tasa de respuesta fue del 60% con una supervivencia libre de progresión de 8.8 meses y una supervivencia global de 17.5 meses. La supervivencia estimada a un año fue de 66%.
+
+								p Siempre debe solicitarse inmunofenotipo extendido antes del tratamiento por la posibilidad de interferencia con las pruebas transfusionales. Se debe dar siempre profilaxis antiviral y continuar por tres meses después de la última dosis. 
+
+								p Se debe premedicar con paracetamol (650 a 1000 mg), difenhidramina (25 a 50 mg) y dexametasona (o corticosteroide equivalente) una a tres horas antes de cada infusión de daratumumab. Algunas instituciones también incluyen una dosis única de montelukast y un bloqueador del receptor H2 antes de la primera infusión. Para reducir el riesgo de reacciones de infusión retrasadas, administrar corticosteroides orales a todos los pacientes el día después de cada infusión de daratumumab. Para los pacientes con antecedentes de EPOC, se pueden agregar broncodilatadores de acción corta y prolongada y corticosteroides inhalados después de la infusión. Se debe suspender estos medicamentos inhalados adicionales si no se producen reacciones de infusión importantes durante las primeras cuatro infusiones.
+
+								p Daratumumab es un anticuerpo monoclonal kappa IgG humano que se puede detectar en los análisis de electroforesis de proteínas séricas e inmunofijación (IFE). Como tal, puede alterar la evaluación de la respuesta en pacientes con MM IgG.
+								
+								//- Table
+								table.table.table-striped
+									caption Tabla 8. Esquemas de rescate que incluyen anticuerpo monoclonal Daratumumab  
+									tbody
+										tr
+											td Daratumumab/Dexametasona
+											td 16 mg/kg basado en el peso actual, se administra de forma semanal por 8 semanas por las semanas 1 a la 8, cada 2 semanas de la 9 a la 24 y luego cada mes hasta la progresión.   Dexametasona ciclo 1 y 2 20 mg días 1,2,8,9,15,16,22 y 23. Ciclo 3 a 6 días 1,2,15,16. Ciclo 7 y siguientes días 1 y 2. 
+										tr
+											td Daratumumab/Lenalidomida
+												br/ Dexametasona
+											td 16 mg/kg basado en el peso actual, se administra de forma semanal por 8 semanas por las semanas 1 a la 8, cada 2 semanas de la 9 a la 24 y luego cada mes hasta la progresión. Lenalidomida 25 mg días 1 al 21.  Dexametasona ciclo 1 y 2 20 mg días 1,2,8,9,15,16,22 y 23. Ciclo 3 a 6 días 1,2,15,16. Ciclo 7 y siguientes días 1 y 2.
+										tr
+											td Daratumumab/Bortezomib
+												br/ Dexametasona
+											td 16 mg/kg basado en el peso actual, se administra de forma semanal por 8 semanas por las semanas 1 a la 8, cada 2 semanas de la 9 a la 24 y luego cada mes hasta la progresión. Bortezomib 1,3 mg/m2 días 1,4,8,11 los primeros 8 ciclos.   Dexametasona ciclo 1 y 2 20 mg días 1,2,8,9,15,16,22 y 23. Ciclo 3 a 6 días 1,2,15,16. Ciclo 7 y siguientes días 1 y 2.
+										tr
+											td Daratumumab/Pomalidomida
+												br/ Dexametasona
+											td 16 mg/kg basado en el peso actual, se administra de forma semanal por 8 semanas por las semanas 1 a la 8, cada 2 semanas de la 9 a la 24 y luego cada mes hasta la progresión. Pomalidomida 4 mg días 1 al 21.  Dexametasona ciclo 1 y 2 20 mg días 1,2,8,9,15,16,22 y 23. Ciclo 3 a 6 días 1,2,15,16. Ciclo 7 y siguientes días 1 y 2.
+											
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4')
+								span 4. Otros agentes y esquemas 
+						div#collapse4.accordion-body.collapse
+							div.accordion-inner
+								p Otros agentes disponibles en la actualidad para el tratamiento del MM refractario y/o recaído son el Elotuzumab que es otro anticuerpo monoclonal, el Panobinostat que es un inhibidor de Histona deacetilasa HDAC no disponibles en la actualidad en Colombia. Existen también los esquemas VTD PACE y el DCEP que usan agentes quimioterapéuticos infusionales que pueden servir de puente a un trasplante autólogo de MO. Su papel en la actualidad es menor dadas las terapias novedosas. Las car T cells BCMA se encuentran actualmente en investigación con resultados prometedores.
+								
+								//- imagen o video				
+								div.banner-video.wow.fadeInUp
+									div.span8
+										div#video
+											figure.galeria
+												a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod3/figura08.png' data-lightbox='example-1')
+													img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod3/figura08.png' alt='Figura 1')
+									div.span4
+										div.img-footer
+											span Gráfico 4. Esquema de tratamiento propuesto a la recaída 
+											
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5')
+								span 5. Terapia de soporte 
+						div#collapse5.accordion-body.collapse
+							div.accordion-inner
+								p Enfermedad ósea y compresión medular 
+								p Se recomienda fuertemente el uso de pamidronato o zolendronato hasta por dos años. La dosis de este último que es el más usado es de 4 mg mensual con requerimiento de ajuste de dosis si hay insuficiencia renal. El denosumab puede usarse, se debe tener en cuenta su costo. Su utilidad mayor está dada para los pacientes con insuficiencia renal establecida. 
+								p Los pacientes con fracturas patológicas se benefician de cirugía ortopédica temprana y debe ser complementada con radioterapia. Cuando exista dolor lumbar severo secundario a fracturas por compresión hay claramente beneficio de vertebroplastia o xifoplastia. La compresión medular requiere tratamiento inmediato con dosis altas de dexametasona y radioterapia local.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse6')
+								span 6. Anemia, fallo medular e infecciones
+						div#collapse6.accordion-body.collapse
+							div.accordion-inner
+								p El uso de eritropoyetina o darbepoetin está recomendado para los pacientes con anemia nivel de Hb menor de 10 g/dL una vez se descarten otras causas de anemia. El objetivo es mantener la Hb alrededor de 12 g/dL menor de 14 g/dL para evitar complicaciones trombóticas e hipertensión. Se recomienda el uso de factores estimulantes de colonias de granulocitos si hay neutropenia inducida por quimioterapia. Los cuadros infecciosos deben ser tratados de manera inmediata. La profilaxis antibiótica permanece controversial, pero puede ser beneficiosa en pacientes recibiendo Inmunomoduladores o pacientes con alto riesgo de infección. Estudios recientes han mostrado como el uso de levofloxacina puede disminuir la mortalidad en la inducción.  Se recomienda la vacunación para influenza y neumococo además de la profilaxis antiviral en los pacientes recibiendo inhibidor del proteosoma. La profilaxis con inmunoglobulina endovenosa no se recomienda. 
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse7')
+								span 7. Prevención de tromboembolismo
+						div#collapse7.accordion-body.collapse
+							div.accordion-inner
+								p Los pacientes con MM tienen alto riesgo de complicaciones trombóticas. Se recomienda el uso de al menos aspirina 100 mg día en ausencia de factores de riesgo trombóticos y anticoagulación plena en los de alto riesgo. Dosis subterapéuticas de anticoagulantes no se recomiendan.
+
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso80')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-3')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-3
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294125', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294127', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

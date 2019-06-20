@@ -1,0 +1,90 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				+titulo-modulo-3-1
+				
+				h3 Tratamiento de rescate del Mieloma Múltiple
+				
+				p Como se dijo anteriormente; a pesar de los tratamientos disponibles en la actualidad que han mejorado la supervivencia de los pacientes con MM, la mayoría de ellos recaerán. La mediana de tiempo a la primera recaída es de 3 a 4 años. Como vimos en los aspectos históricos, quizás el primer tratamiento de rescate en MM fue el hierro y la quinina después de haberse usado la flebotomía como inducción y sanguijuelas como terapia de mantenimiento. 
+				
+				p Hasta hace una década, solamente se tenía disponible la Lenalidomida y el Bortezomib como estrategias de rescate en el Mieloma múltiple. 
+
+				p El tratamiento de rescate permanece como un reto para los clínicos. En la actualidad existen varias clases de medicamentos disponibles para el tratamiento del MM refractario y/o recaído entre los cuales tenemos anticuerpos monoclonales como el Daratumumab o Elotuzumab, Inmunomoduladores como la Talidomida, Lenalidomida, Pomalidomida, inhibidores de histona acetilasa como el Panobinostat y los inhibidores del proteosoma como el Carfilzomib, Bortezomib e Ixazomib. Existen además los regímenes infusionales y la posibilidad de un segundo trasplante en los pacientes que podrían ser candidatos a esta terapia. 
+
+				p Los medicamentos para administrar en la recaída del MM varían en cuanto a modo de administración, indicación y perfil de seguridad.
+				
+				h3 Variables a tener en cuenta en el momento de rescate del mieloma múltiple.
+				
+				p Son muchas las variables que se deben tener en cuenta en el momento de escoger la terapia de rescate en el MM que deben guiar el tratamiento.
+				
+				//- imagen o video				
+				div.banner-video.wow.fadeInUp
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod3/figura07.png' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/images/mod3/figura07.png' alt='Figura 1')
+					div.span4
+						div.img-footer
+							span Gráfico 3. Variables que determinan la terapia de rescate.
+							
+				p Como se describe en la tabla, estos factores tienen que ver con características del paciente, características biológicas de la enfermedad, toxicidad acumulada en los tratamientos anteriores, comorbilidades, estado funcional, contexto social del paciente (vivienda, cercanía al hospital), preferencia del paciente para uno de los medicamentos, características de la recaída y con esto definir también los objetivos del tratamiento. 
+
+				p Los grupos de consenso han definido como objetivos de tratamiento dos grandes grupos.
+				
+				ol
+					li Pacientes en quienes se necesita profundizar al máximo la respuesta e intentar sostenerla la mayor cantidad de tiempo posible
+					li Pacientes en quienes el objetivo es garantizar una adecuada calidad de vida. 
+
+				p A grandes rasgos podemos decir que los pacientes jóvenes son los que se beneficiaran de la primera estrategia y los pacientes ancianos no fit de la segunda. Hay que tener por supuesto en cuenta los tratamientos previos como Lenalidomida y Bortezomib que son ahora el pilar del tratamiento del MM, la biología de la enfermedad, la respuesta a un trasplante previo con la intención de ofrecer un segundo trasplante, la presencia de enfermedad extramedular tipo plasmocitomas, los antecedentes de hipertensión arterial, neuropatía y cardiopatía. Siempre se debe explicar de la manera más clara los objetivos del tratamiento al paciente y a su familia. 
+
+				p Una de las variables más importantes a la hora de escoger el tratamiento de rescate es el conocimiento del comportamiento de la enfermedad con respecto a la respuesta alcanzada con la primera línea. Como ya hemos descrito con anterioridad existen tres categorías de MM refractario y/o recaído. 
+
+				p No existe en Colombia una guía clínica sobre el manejo del MM refractario o recaído hasta el momento. El medicamento escogido para el rescate usualmente se basa en las guías clínicas internacionales y el juicio clínico. Son a grandes rasgos dos guías en las que nos basamos actualmente para escoger la terapia de rescate, hablamos de las guías ESMO y a las guías americanas con algunas diferencias.
+				
+				h3 Indicaciones de terapia
+				
+				p Como dijimos anteriormente, se indica una nueva línea de tratamiento si hay una recaída clínica, es decir, si hay nuevamente componente CRAB o hay un aumento rápido de la paraproteína.  Si no hubo estratificación del riesgo al inicio de la enfermedad es el momento para hacerlo. Los pacientes que recaen antes de un año son considerados inmediatamente de alto riesgo sin importar la clasificación citogenética inicial, es decir si fueron de riesgo estándar. De igual forma pacientes con citogenética de alto riesgo cuya duración de la respuesta fue mayor a dos años son considerados de riesgo estándar si no hay alteraciones citogenéticas adicionales. 
+
+				p Nuevamente en este momento debe definirse si el paciente es elegible a un nuevo trasplante o al primero si no se realizó de forma temprana. Se considera globalmente que son candidatos a un nuevo trasplante de forma clínica si la duración de la respuesta en el primero fue mayor a dos años, aunque algunos grupos consideran que esto puede variar en función de si recibió o no mantenimiento. Con cada línea de tratamiento subsecuente utilizada la supervivencia libre de evento sigue disminuyendo.
+
+				
+				//- Progreso modulo
+				+progreso-modulo('progreso60')
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-3')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-3
+	
+	//- pagination
+	+paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294124', 'available', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=294126', 'available', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

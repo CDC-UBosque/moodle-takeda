@@ -1,0 +1,46 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+			
+				//- titulo
+				+titulo-modulo-4
+				
+				h3 Material PDF / Pathogenesis of Myeloma
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/pdf/mod4/anual-rewievs.pdf" frameborder="0" allowfullscreen)
+
+
+	//- Material modulo
+	+material-modulo('material-mod-4')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	+codigo-modulo-4
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
