@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulo 1
+				+banner
+			
+				//- menu
+				+menu
+				
+				//- titulo
+				//- +titulo-modulo-7
+				h2 Módulo 7 / 
+					span Documento excel
+				
+				h3 Herramientas evidencia científica por tipo de estudio
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/pdf/mod7/HERRAMIENTAS-EVIDENCIA-CIENTIFICA-POR-TIPO-DE-ESTUDIO-30-05-2019.xlsx' width='100%' height='565px' frameborder='0'> </iframe>
+								//- iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/pdf/mod7/HERRAMIENTAS-EVIDENCIA-CIENTIFICA-POR-TIPO-DE-ESTUDIO-30-05-2019.xlsx" frameborder="0" allowfullscreen)
+								
+								
+				p
+					a.btn.avilable(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/EPOC-astrazeneca/pdf/mod7/HERRAMIENTAS-EVIDENCIA-CIENTIFICA-POR-TIPO-DE-ESTUDIO-30-05-2019.xlsx') Descargar archivo de excel aquí
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+				
+						
+				
+	//- Material modulo
+	+material-modulo('material-mod-7')
+							
+	//- footer section			
+	+footer-interno
+	
+	//- codigo section			
+	//- +codigo-modulo-7
+	
+	//- pagination
+	//- +paginador('https://ubosquemoodle.unbosque.edu.co/mod/page/view.php?id=310545', 'available', 'Anterior', '#', 'disabled', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
