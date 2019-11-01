@@ -232,7 +232,8 @@
 				    }
 				}
 				
-				&:nth-child(5){
+				&:nth-child(5),
+				&:nth-child(10){
 				    background: $color_3;
 				    .dropdown-menu{
 				    	background: $color_3;
@@ -258,7 +259,8 @@
 				    }
 				}
 				
-				&:nth-child(6){
+				&:nth-child(6),
+				&:nth-child(11){
 				    background: $color_4;
 				    .dropdown-menu{
 				    	background: $color_4;
@@ -413,7 +415,7 @@
 					letter-spacing: 0.6px;
 					border: 0;
 					border-radius: 0;
-					word-break: break-word;
+					word-break: break-all;
 					
 					span{
 						font-size: inherit;
